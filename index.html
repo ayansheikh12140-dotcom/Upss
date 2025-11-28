@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 9 Notes - UPSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3a0ca3;
+            --accent: #7209b7;
+            --success: #4cc9f0;
+            --warning: #f72585;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gradient-primary: linear-gradient(135deg, #4361ee, #3a0ca3);
+            --gradient-accent: linear-gradient(135deg, #7209b7, #f72585);
+            --gradient-success: linear-gradient(135deg, #4cc9f0, #4895ef);
+            --shadow: 0 8px 25px rgba(0,0,0,0.1);
+            --shadow-hover: 0 12px 35px rgba(0,0,0,0.15);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: var(--dark);
+            line-height: 1.6;
+            min-height: 100vh;
+            transition: all 0.3s ease;
+        }
+        
+        body.dark-mode {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #f0f0f0;
+        }
+        
+        header {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .dark-mode header {
+            background: linear-gradient(135deg, #2d3047, #1a1a2e);
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            z-index: 1;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .header-text {
+            text-align: left;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .header-controls {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .search-box {
+            background: white;
+            border-radius: 50px;
+            padding: 0.8rem 1.5rem;
+            margin: 2rem auto;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            max-width: 600px;
+            transition: all 0.3s ease;
+        }
+        
+        .dark-mode .search-box {
+            background: #2d3047;
+            color: white;
+        }
+        
+        .search-box:focus-within {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .search-box i {
+            color: var(--primary);
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .search-box input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 1rem;
+            color: var(--dark);
+            background: transparent;
+        }
+        
+        .dark-mode .search-box input {
+            color: white;
+        }
+        
+        .dark-mode .search-box input::placeholder {
+            color: #b0b0b0;
+        }
+        
+        .quick-nav {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .quick-nav h3 {
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .dark-mode .quick-nav h3 {
+            color: white;
+        }
+        
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .quick-link {
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+        
+        .quick-link:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .subject-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .dark-mode .subject-card {
+            background: #2d3047;
+        }
+        
+        .subject-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .subject-header {
+            padding: 1.5rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .subject-header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.1);
+        }
+        
+        .subject-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .subject-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .chapter-count {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .progress-container {
+            margin: 1rem 0;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            background: white;
+            transition: width 0.5s ease;
+        }
+        
+        .progress-text {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+        
+        .chapters-list {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+        
+        .chapter-item {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        .chapter-item:hover {
+            transform: translateX(5px);
+        }
+        
+        .chapter-item i {
+            color: var(--primary);
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .dark-mode .chapter-item i {
+            color: var(--success);
+        }
+        
+        .chapter-link {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            padding: 0.5rem 0;
+            display: block;
+            width: 100%;
+            transition: color 0.2s ease;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .dark-mode .chapter-link {
+            color: #f0f0f0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .chapter-link:hover {
+            color: var(--primary);
+        }
+        
+        .dark-mode .chapter-link:hover {
+            color: var(--success);
+        }
+        
+        .bookmark-btn {
+            background: none;
+            border: none;
+            color: #ccc;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-left: auto;
+            transition: all 0.2s ease;
+        }
+        
+        .bookmark-btn:hover {
+            color: gold;
+            transform: scale(1.2);
+        }
+        
+        .bookmark-btn.bookmarked {
+            color: gold;
+        }
+        
+        .subject-footer {
+            padding: 1rem 1.5rem;
+            background: rgba(0,0,0,0.02);
+            border-top: 1px solid rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .dark-mode .subject-footer {
+            background: rgba(255,255,255,0.05);
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .btn {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 15px rgba(67, 97, 238, 0.3);
+        }
+        
+        .btn i {
+            margin-left: 5px;
+        }
+        
+        .dark-mode-toggle {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .dark-mode-toggle:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        
+        .download-all {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .download-all:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-3px);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            background: var(--dark);
+            color: white;
+        }
+        
+        .dark-mode footer {
+            background: #1a1a2e;
+        }
+        
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--success);
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            background: rgba(255,255,255,0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-top: 1rem;
+        }
+        
+        /* Subject-specific colors */
+        .chemistry .subject-header {
+            background: var(--gradient-accent);
+        }
+        
+        .computer .subject-header {
+            background: linear-gradient(135deg, #ff6b6b, #ffa500);
+        }
+        
+        .english .subject-header {
+            background: linear-gradient(135deg, #1dd1a1, #10ac84);
+        }
+        
+        .mathematics .subject-header {
+            background: linear-gradient(135deg, #54a0ff, #2e86de);
+        }
+        
+        .physics .subject-header {
+            background: linear-gradient(135deg, #ff9ff3, #f368e0);
+        }
+        
+        /* Quick link colors */
+        .quick-link.chemistry {
+            background: var(--gradient-accent);
+        }
+        
+        .quick-link.computer {
+            background: linear-gradient(135deg, #ff6b6b, #ffa500);
+        }
+        
+        .quick-link.english {
+            background: linear-gradient(135deg, #1dd1a1, #10ac84);
+        }
+        
+        .quick-link.mathematics {
+            background: linear-gradient(135deg, #54a0ff, #2e86de);
+        }
+        
+        .quick-link.physics {
+            background: linear-gradient(135deg, #ff9ff3, #f368e0);
+        }
+        
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--success);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-hover);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .subjects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .container {
+                padding: 1.5rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .header-text {
+                text-align: center;
+            }
+            
+            .quick-links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .quick-link {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Class 9 Notes</h1>
+                <p class="subtitle">Comprehensive Study Materials for UPSS Students</p>
+            </div>
+            <div class="header-controls">
+                <button class="download-all">
+                    <i class="fas fa-download"></i>
+                    Download All
+                </button>
+                <button class="dark-mode-toggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search for chapters, subjects, or topics...">
+        </div>
+        
+        <div class="quick-nav">
+            <h3>Quick Access</h3>
+            <div class="quick-links">
+                <a href="#chemistry" class="quick-link chemistry">Chemistry</a>
+                <a href="#computer" class="quick-link computer">Computer</a>
+                <a href="#english" class="quick-link english">English</a>
+                <a href="#mathematics" class="quick-link mathematics">Mathematics</a>
+                <a href="#physics" class="quick-link physics">Physics</a>
+            </div>
+        </div>
+        
+        <div class="subjects-grid">
+            <!-- Chemistry Card -->
+            <div class="subject-card chemistry" id="chemistry">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h2 class="subject-title">Chemistry</h2>
+                    <p class="chapter-count">4 Chapters</p>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                        <span class="progress-text">60% Complete</span>
+                    </div>
+                </div>
+                <div class="chapters-list">
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="chap1.html" class="chapter-link">Chapter 1 – Fundamentals of Chemistry</a>
+                        <button class="bookmark-btn" data-chapter="chap1">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="chap2.html" class="chapter-link">Chapter 2 – Atomic Structure</a>
+                        <button class="bookmark-btn" data-chapter="chap2">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="chap3.html" class="chapter-link">Chapter 3 – Periodic Table</a>
+                        <button class="bookmark-btn" data-chapter="chap3">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="chap4.html" class="chapter-link">Chapter 4 – Chemical Bonding</a>
+                        <button class="bookmark-btn" data-chapter="chap4">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-footer">
+                    <span>Last updated: 2 days ago</span>
+                    <a href="#" class="btn">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Computer Card -->
+            <div class="subject-card computer" id="computer">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h2 class="subject-title">Computer</h2>
+                    <p class="chapter-count">5 Chapters</p>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 40%"></div>
+                        </div>
+                        <span class="progress-text">40% Complete</span>
+                    </div>
+                </div>
+                <div class="chapters-list">
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="comm1.html" class="chapter-link">Chapter 1 – Fundamentals of Computer</a>
+                        <button class="bookmark-btn" data-chapter="comm1">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="c2.html" class="chapter-link">Chapter 2 – Fundamentals of Operating System</a>
+                        <button class="bookmark-btn" data-chapter="c2">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="computer3.html" class="chapter-link">Chapter 3 – Office Automation</a>
+                        <button class="bookmark-btn" data-chapter="computer3">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="com4.html" class="chapter-link">Chapter 4 – Data Communication and Computer Networks</a>
+                        <button class="bookmark-btn" data-chapter="com4">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="com5.html" class="chapter-link">Chapter 5 – Computer Security and Ethics</a>
+                        <button class="bookmark-btn" data-chapter="com5">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-footer">
+                    <span>Last updated: 1 week ago</span>
+                    <a href="#" class="btn">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- English Card -->
+            <div class="subject-card english" id="english">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h2 class="subject-title">English</h2>
+                    <p class="chapter-count">4 Chapters</p>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <span class="progress-text">75% Complete</span>
+                    </div>
+                </div>
+                <div class="chapters-list">
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="eng1.html" class="chapter-link">Chapter 1 – The Last Sermon of Holy Prophet</a>
+                        <button class="bookmark-btn" data-chapter="eng1">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="eng2.html" class="chapter-link">Chapter 2 – Shah Abdul Latif Bhitai</a>
+                        <button class="bookmark-btn" data-chapter="eng2">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="eng3.html" class="chapter-link">Chapter 3 – Chasing Dreams</a>
+                        <button class="bookmark-btn" data-chapter="eng3">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="eng4.html" class="chapter-link">Chapter 4 – The Great Visionaries</a>
+                        <button class="bookmark-btn" data-chapter="eng4">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-footer">
+                    <span>Last updated: 3 days ago</span>
+                    <a href="#" class="btn">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Mathematics Card -->
+            <div class="subject-card mathematics" id="mathematics">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h2 class="subject-title">Mathematics</h2>
+                    <p class="chapter-count">4 Chapters</p>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 50%"></div>
+                        </div>
+                        <span class="progress-text">50% Complete</span>
+                    </div>
+                </div>
+                <div class="chapters-list">
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="m1.html" class="chapter-link">Chapter 1 – Real and Complex Numbers</a>
+                        <button class="bookmark-btn" data-chapter="m1">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="m2.html" class="chapter-link">Chapter 2 – Logarithms</a>
+                        <button class="bookmark-btn" data-chapter="m2">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="m3.html" class="chapter-link">Chapter 3 – Algebraic Expression and Formulas</a>
+                        <button class="bookmark-btn" data-chapter="m3">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="m4.html" class="chapter-link">Chapter 4 – Factorization</a>
+                        <button class="bookmark-btn" data-chapter="m4">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-footer">
+                    <span>Last updated: 5 days ago</span>
+                    <a href="#" class="btn">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Physics Card -->
+            <div class="subject-card physics" id="physics">
+                <div class="subject-header">
+                    <div class="subject-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h2 class="subject-title">Physics</h2>
+                    <p class="chapter-count">4 Chapters</p>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30%"></div>
+                        </div>
+                        <span class="progress-text">30% Complete</span>
+                    </div>
+                </div>
+                <div class="chapters-list">
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="phy1.html" class="chapter-link">Chapter 1 – Physical Quantities and Measurement</a>
+                        <button class="bookmark-btn" data-chapter="phy1">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="phy2.html" class="chapter-link">Chapter 2 – Kinematics</a>
+                        <button class="bookmark-btn" data-chapter="phy2">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="phy3.html" class="chapter-link">Chapter 3 – Dynamics</a>
+                        <button class="bookmark-btn" data-chapter="phy3">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="chapter-item">
+                        <i class="fas fa-book"></i>
+                        <a href="phy4.html" class="chapter-link">Chapter 4 – Turning Effect of Forces</a>
+                        <button class="bookmark-btn" data-chapter="phy4">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="subject-footer">
+                    <span>Last updated: 4 days ago</span>
+                    <a href="#" class="btn">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">UPSS Class 9 Notes</div>
+            <p>Your comprehensive study companion for Class 9 curriculum</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright">© 2023 UPSS Class 9 Notes. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toast-message">Bookmark added successfully!</span>
+    </div>
+    
+    <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.querySelector('.dark-mode-toggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const icon = darkModeToggle.querySelector('i');
+            if (document.body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                showToast('Dark mode enabled');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                showToast('Light mode enabled');
+            }
+        });
+        
+        // Bookmark functionality
+        const bookmarkButtons = document.querySelectorAll('.bookmark-btn');
+        bookmarkButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                this.classList.toggle('bookmarked');
+                const icon = this.querySelector('i');
+                if (this.classList.contains('bookmarked')) {
+                    icon.classList.remove('fa-bookmark');
+                    icon.classList.add('fas', 'fa-bookmark');
+                    showToast('Chapter bookmarked');
+                } else {
+                    icon.classList.remove('fas', 'fa-bookmark');
+                    icon.classList.add('far', 'fa-bookmark');
+                    showToast('Bookmark removed');
+                }
+            });
+        });
+        
+        // Download All functionality
+        const downloadAllBtn = document.querySelector('.download-all');
+        downloadAllBtn.addEventListener('click', () => {
+            showToast('Downloading all notes...');
+            // In a real implementation, this would trigger a download
+            setTimeout(() => {
+                showToast('All notes downloaded successfully!');
+            }, 2000);
+        });
+        
+        // Quick navigation
+        const quickLinks = document.querySelectorAll('.quick-link');
+        quickLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    // Add a highlight effect
+                    targetElement.style.boxShadow = '0 0 0 3px rgba(67, 97, 238, 0.5)';
+                    setTimeout(() => {
+                        targetElement.style.boxShadow = '';
+                    }, 1500);
+                }
+            });
+        });
+        
+        // Search functionality
+        document.querySelector('.search-box input').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const chapters = document.querySelectorAll('.chapter-link');
+            let foundCount = 0;
+            
+            chapters.forEach(chapter => {
+                const chapterText = chapter.textContent.toLowerCase();
+                const chapterItem = chapter.closest('.chapter-item');
+                
+                if (chapterText.includes(searchTerm)) {
+                    chapterItem.style.display = 'flex';
+                    foundCount++;
+                } else {
+                    chapterItem.style.display = 'none';
+                }
+            });
+            
+            // Show search results count
+            if (searchTerm.length > 0) {
+                showToast(`Found ${foundCount} chapters matching "${searchTerm}"`);
+            }
+        });
+        
+        // Toast notification function
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toast-message');
+            toastMessage.textContent = message;
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+        
+        // Add animation to cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.subject-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+        
+        // Simulate some bookmarks already set
+        document.querySelectorAll('.bookmark-btn')[2].classList.add('bookmarked');
+        document.querySelectorAll('.bookmark-btn')[2].querySelector('i').className = 'fas fa-bookmark';
+        document.querySelectorAll('.bookmark-btn')[7].classList.add('bookmarked');
+        document.querySelectorAll('.bookmark-btn')[7].querySelector('i').className = 'fas fa-bookmark';
+    </script>
+</body>
+</html>
