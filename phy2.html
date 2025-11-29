@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Kinematics - Class 9 Sindh Textbook Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        /* Theme focused on motion and dynamics (e.g., deep orange/red accents) */
+        .navbar { background-color: #bf360c !important; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .section { margin-bottom: 40px; }
+        /* Light orange background for MCQs */
+        .mcq { background-color: #fff3e0; padding: 15px; margin: 10px 0; border-left: 5px solid #ff7043; border-radius: 5px; }
+        .question { font-weight: bold; }
+        .answer { margin-left: 20px; color: #555; display: none; }
+        /* Light gray background for important notes */
+        .important { background-color: #eceff1; padding: 15px; border-left: 5px solid #607d8b; border-radius: 5px; }
+        .btn-toggle { margin-top: 10px; }
+        /* Light white/orange background for the quiz */
+        .quiz-section { background-color: #fff8e1; padding: 20px; border-radius: 8px; }
+        .quiz-question { margin-bottom: 15px; }
+        .quiz-result { margin-top: 20px; display: none; }
+        footer { background-color: #3e2723; color: white; padding: 20px; text-align: center; }
+        .numerical { background-color: #f8f9fa; padding: 15px; margin: 10px 0; border: 1px solid #dee2e6; border-radius: 5px; }
+        .numerical .solution { display: none; margin-top: 10px; }
+        .physics-formula { background-color: #ffe0b2; padding: 10px; border-radius: 5px; margin-top: 10px; }
+        .table-responsive { margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Physics Class 9 - Sindh Board</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#notes">Notes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equations">Equations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mcqs">MCQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#short-questions">Short Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#long-questions">Long Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#numerical">Numericals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#important">Important</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <header class="text-center mb-4">
+            <h1 style="color: #bf360c;">Chapter 2: Kinematics 🏃</h1>
+            <p class="lead">Study of Motion Without Considering its Cause</p>
+        </header>
+
+        <section id="notes" class="section">
+            <h3 style="color: #bf360c;">Core Concepts ⚙️</h3>
+            <p>**Kinematics** is the branch of mechanics that deals with the study of motion of objects **without** reference to the forces which cause the motion.</p>
+
+            <h4>1. Rest and Motion</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">**Rest:** An object is at rest if it **does not change** its position with respect to its surroundings.</li>
+                <li class="list-group-item">**Motion:** An object is in motion if it **changes** its position with respect to its surroundings.</li>
+                <li class="list-group-item">**Key Fact:** Rest and motion are **relative** terms.</li>
+            </ul>
+
+            <h4 class="mt-4">2. Scalars and Vectors</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">**Scalar:** A quantity described completely by **magnitude only** (e.g., Distance, Speed, Mass, Time).</li>
+                <li class="list-group-item">**Vector:** A quantity described completely by **magnitude AND direction** (e.g., Displacement, Velocity, Acceleration, Force).</li>
+            </ul>
+
+            <h4 class="mt-4">3. Displacement and Velocity</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">**Distance:** The actual path length covered by a body (Scalar).</li>
+                <li class="list-group-item">**Displacement ($\vec{d}$):** The shortest straight-line distance between the initial and final positions (Vector).</li>
+                <li class="list-group-item">**Speed ($v$):** Rate of change of distance (Scalar). Formula: $v = \frac{\text{Distance}}{\text{Time}}$. Unit: $\text{m/s}$.</li>
+                <li class="list-group-item">**Velocity ($\vec{v}$):** Rate of change of displacement (Vector). Formula: $\vec{v} = \frac{\text{Displacement}}{\text{Time}}$. Unit: $\text{m/s}$.</li>
+                <li class="list-group-item">**Uniform Velocity:** Velocity remains constant (same magnitude and direction).</li>
+                <li class="list-group-item">**Average Velocity:** $\text{Average } \vec{v} = \frac{\text{Total Displacement}}{\text{Total Time}}$.</li>
+            </ul>
+
+            <h4 class="mt-4">4. Acceleration</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">**Acceleration ($\vec{a}$):** Rate of change of velocity (Vector). Formula: $$\vec{a} = \frac{\text{Change in Velocity}}{\text{Time}} = \frac{\vec{v}_f - \vec{v}_i}{t}$$ Unit: $\text{m/s}^2$.</li>
+                <li class="list-group-item">**Uniform Acceleration:** The rate of change of velocity is constant.</li>
+                <li class="list-group-item">**Deceleration (Negative Acceleration):** When the velocity of a body decreases.</li>
+                <li class="list-group-item">**Gravity:** When an object moves freely under gravity, its acceleration is $g \approx 9.8 \text{ m/s}^2$ (downwards).</li>
+            </ul>
+        </section>
+
+        <section id="equations" class="section">
+            <h3 style="color: #bf360c;">Equations of Uniformly Accelerated Motion</h3>
+            <p>These equations are valid only when acceleration ($\vec{a}$) is **constant**.</p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Equation</th>
+                            <th>Formula</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>**First Equation**</td><td>$$v_f = v_i + at$$</td></tr>
+                        <tr><td>**Second Equation**</td><td>$$S = v_i t + \frac{1}{2} a t^2$$</td></tr>
+                        <tr><td>**Third Equation**</td><td>$$2aS = v_f^2 - v_i^2$$</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-3">Where:</p>
+            <ul>
+                <li>$v_i$ = Initial Velocity</li>
+                <li>$v_f$ = Final Velocity</li>
+                <li>$a$ = Uniform Acceleration</li>
+                <li>$t$ = Time</li>
+                <li>$S$ = Distance/Displacement Covered</li>
+            </ul>
+        </section>
+        
+        <section id="mcqs" class="section">
+            <h3 style="color: #bf360c;">Multiple Choice Questions (MCQs) 🎯</h3>
+            <div class="mcq">
+                <p class="question">1. The shortest distance between two points is called:</p>
+                <p>a) Distance<br>b) Speed<br>c) Displacement<br>d) Velocity</p>
+                <button class="btn btn-sm btn-warning btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Displacement</p>
+            </div>
+            <div class="mcq">
+                <p class="question">2. Rate of change of velocity is known as:</p>
+                <p>a) Speed<br>b) Distance<br>c) Acceleration<br>d) Momentum</p>
+                <button class="btn btn-sm btn-warning btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Acceleration</p>
+            </div>
+            <div class="mcq">
+                <p class="question">3. Which of the following is a scalar quantity?</p>
+                <p>a) Acceleration<br>b) Displacement<br>c) Speed<br>d) Force</p>
+                <button class="btn btn-sm btn-warning btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Speed</p>
+            </div>
+            <div class="mcq">
+                <p class="question">4. The unit of acceleration in the SI system is:</p>
+                <p>a) $\text{m/s}$<br>b) $\text{m/s}^2$<br>c) $\text{km/h}$<br>d) $\text{kg}\cdot\text{m/s}^2$</p>
+                <button class="btn btn-sm btn-warning btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) $\text{m/s}^2$</p>
+            </div>
+        </section>
+
+        <section id="short-questions" class="section">
+            <h3 style="color: #bf360c;">Short Questions ❓</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item">**Define Kinematics.**<br>Answer: Kinematics is the study of motion of objects without considering the cause (forces) of the motion.</li>
+                <li class="list-group-item">**Differentiate between distance and displacement.**<br>Answer: **Distance** is the total path covered (scalar), while **displacement** is the shortest distance from the initial to the final point (vector).</li>
+                <li class="list-group-item">**When is acceleration considered uniform?**<br>Answer: Acceleration is uniform when the velocity of the body changes by **equal amounts in equal intervals of time**.</li>
+                <li class="list-group-item">**Give an example of negative acceleration (deceleration).**<br>Answer: When a driver applies brakes to slow down a moving car, the car's acceleration is in the direction opposite to its velocity.</li>
+                <li class="list-group-item">**What is the value of 'g' and what does it represent?**<br>Answer: The value of $g$ (acceleration due to gravity) is approximately $9.8 \text{ m/s}^2$. It represents the constant acceleration experienced by any object falling freely near the Earth's surface.</li>
+            </ol>
+        </section>
+
+        <section id="long-questions" class="section">
+            <h3 style="color: #bf360c;">Long Questions 📚</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item">**Derive the first equation of motion ($v_f = v_i + at$).**<br>Answer: Acceleration is defined as the rate of change of velocity:
+                    $$a = \frac{\text{Change in Velocity}}{\text{Time}} = \frac{v_f - v_i}{t}$$
+                    Rearranging the terms to solve for $v_f$:
+                    $$at = v_f - v_i$$
+                    $$\Rightarrow v_f = v_i + at$$
+                </li>
+                <li class="list-group-item">**Derive the second equation of motion ($S = v_i t + \frac{1}{2} a t^2$).**<br>Answer: The distance $S$ covered is given by the product of average velocity and time. For uniform acceleration, the average velocity is:
+                    $$\text{Average Velocity} = \frac{v_i + v_f}{2}$$
+                    Distance $S$ is: $$S = (\text{Average Velocity}) \times t = \left(\frac{v_i + v_f}{2}\right) t$$
+                    Substitute $v_f$ from the first equation ($v_f = v_i + at$):
+                    $$S = \left(\frac{v_i + (v_i + at)}{2}\right) t = \left(\frac{2v_i + at}{2}\right) t$$
+                    $$S = \left(v_i + \frac{1}{2} at\right) t$$
+                    $$\Rightarrow S = v_i t + \frac{1}{2} a t^2$$
+                </li>
+                <li class="list-group-item">**Differentiate between Speed and Velocity with respect to their magnitude and direction.**<br>Answer: **Speed** is a **scalar** quantity that only requires magnitude (e.g., $50 \text{ km/h}$) and gives the rate of distance covered. **Velocity** is a **vector** quantity that requires both magnitude and direction (e.g., $50 \text{ km/h}$ East) and gives the rate of displacement. The magnitude of velocity is speed, but velocity must specify direction.</li>
+            </ol>
+        </section>
+
+        <section id="numerical" class="section">
+            <h3 style="color: #bf360c;">Numerical Problems 🔢</h3>
+            <p>Practice applying the equations of motion.</p>
+            <div class="numerical">
+                <p><strong>1. A car accelerates from rest ( $0 \text{ m/s}$) at $2 \text{ m/s}^2$ for $5 \text{ s}$. Find its final velocity.</strong></p>
+                <button class="btn btn-sm btn-info" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Given: $v_i = 0 \text{ m/s}$, $a = 2 \text{ m/s}^2$, $t = 5 \text{ s}$.
+                    Using $v_f = v_i + at$:
+                    $$v_f = 0 + (2 \text{ m/s}^2)(5 \text{ s})$$
+                    $$v_f = 10 \text{ m/s}$$
+                </div>
+            </div>
+            <div class="numerical">
+                <p><strong>2. A motorcycle moving at $15 \text{ m/s}$ accelerates at $3 \text{ m/s}^2$ over a distance of $50 \text{ m}$. Find its final velocity.</strong></p>
+                <button class="btn btn-sm btn-info" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Given: $v_i = 15 \text{ m/s}$, $a = 3 \text{ m/s}^2$, $S = 50 \text{ m}$.
+                    Using $2aS = v_f^2 - v_i^2$:
+                    $$2(3 \text{ m/s}^2)(50 \text{ m}) = v_f^2 - (15 \text{ m/s})^2$$
+                    $$300 = v_f^2 - 225$$
+                    $$v_f^2 = 300 + 225 = 525$$
+                    $$v_f = \sqrt{525} \approx 22.91 \text{ m/s}$$
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="section quiz-section">
+            <h3 style="color: #bf360c;">Interactive Quiz 🤔</h3>
+            <p>Test your knowledge with this quick quiz!</p>
+            <div class="quiz-question">
+                <p>1. The distance covered by a freely falling body from rest is calculated using which formula?</p>
+                <input type="radio" name="q1" value="v_f = v_i + gt"> $v_f = v_i + gt$<br>
+                <input type="radio" name="q1" value="S = v_i t + 1/2 gt^2"> $S = v_i t + 1/2 gt^2$<br>
+                <input type="radio" name="q1" value="2gS = v_f^2 - v_i^2"> $2gS = v_f^2 - v_i^2$<br>
+            </div>
+            <div class="quiz-question">
+                <p>2. A body moving with uniform velocity has an acceleration of:</p>
+                <input type="radio" name="q2" value="9.8 m/s^2"> $9.8 \text{ m/s}^2$<br>
+                <input type="radio" name="q2" value="Zero"> Zero<br>
+                <input type="radio" name="q2" value="Constant value"> Constant value<br>
+            </div>
+            <button class="btn btn-primary" onclick="submitQuiz()">Submit Quiz</button>
+            <div id="quiz-result" class="quiz-result alert alert-info"></div>
+        </section>
+
+        <section id="important" class="section">
+            <h3 style="color: #bf360c;">Important Points ⭐</h3>
+            <div class="important">
+                <ul>
+                    <li>Differentiate clearly between the three pairs: **Scalar/Vector, Distance/Displacement, Speed/Velocity**.</li>
+                    <li>Memorize and be able to derive all **three Equations of Motion**.</li>
+                    <li>Understand the conditions for which the Equations of Motion are valid (**Uniform Acceleration**).</li>
+                    <li>Know how to treat problems involving **Free Fall** (using $g$ for $a$).</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Source: Sindh Textbook Board Physics Class 9, Chapter 2. For more chapters or updates, refer to the official textbook. &copy; 2023 | <button class="btn btn-light btn-sm" onclick="window.print()">Print Page</button></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                button.textContent = 'Hide Answer';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'Show Answer';
+            }
+        }
+
+        function toggleSolution(button) {
+            const solution = button.nextElementSibling;
+            if (solution.style.display === 'none' || solution.style.display === '') {
+                solution.style.display = 'block';
+                button.textContent = 'Hide Solution';
+            } else {
+                solution.style.display = 'none';
+                button.textContent = 'Show Solution';
+            }
+        }
+
+        function submitQuiz() {
+            let score = 0;
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const totalQuestions = 2;
+
+            // Q1: The distance covered by a freely falling body from rest is calculated using which formula? (Assuming rest means v_i = 0, so S = 1/2 gt^2, which comes from the second formula)
+            // Note: The second equation of motion for v_i = 0 simplifies to S = 1/2 at^2 or S = 1/2 gt^2. The best fit is the second option.
+            if (q1 && q1.value === 'S = v_i t + 1/2 gt^2') score++; 
+            
+            // Q2: A body moving with uniform velocity has an acceleration of:
+            if (q2 && q2.value === 'Zero') score++;
+
+            const resultElement = document.getElementById('quiz-result');
+            resultElement.innerHTML = `Your score: ${score} out of ${totalQuestions}.`;
+            resultElement.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

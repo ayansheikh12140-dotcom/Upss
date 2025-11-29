@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Factorization - Class 9 Mathematics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .navbar { background-color: #2E8B57 !important; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .section { margin-bottom: 40px; }
+        .mcq { background-color: #e9f7ef; padding: 15px; margin: 10px 0; border-left: 5px solid #2E8B57; border-radius: 5px; }
+        .question { font-weight: bold; }
+        .answer { margin-left: 20px; color: #555; display: none; }
+        .important { background-color: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; border-radius: 5px; }
+        .btn-toggle { margin-top: 10px; }
+        .quiz-section { background-color: #f0f8ff; padding: 20px; border-radius: 8px; }
+        .quiz-question { margin-bottom: 15px; }
+        .quiz-result { margin-top: 20px; display: none; }
+        footer { background-color: #343a40; color: white; padding: 20px; text-align: center; }
+        .exercise { background-color: #f8f9fa; padding: 15px; margin: 10px 0; border: 1px solid #dee2e6; border-radius: 5px; }
+        .exercise .solution { display: none; margin-top: 10px; }
+        .math-example { background-color: #e8f4f8; padding: 15px; margin: 10px 0; border-left: 5px solid #17a2b8; border-radius: 5px; }
+        .definition { background-color: #f0e6ff; padding: 15px; margin: 10px 0; border-left: 5px solid #6f42c1; border-radius: 5px; }
+        .formula-box { background-color: #fff3e6; padding: 15px; margin: 10px 0; border-left: 5px solid #fd7e14; border-radius: 5px; }
+        .method-box { background-color: #e6f7e6; padding: 15px; margin: 10px 0; border-left: 5px solid #28a745; border-radius: 5px; }
+        .special-case { background-color: #f0f8ff; padding: 15px; margin: 10px 0; border-left: 5px solid #007bff; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mathematics Class 9 - Sindh Board</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#notes">Notes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mcqs">MCQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#short-questions">Short Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#long-questions">Long Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#exercises">Exercises</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#important">Important</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <header class="text-center mb-4">
+            <h1 class="text-success">Chapter 4: Factorization</h1>
+            <p class="lead">Comprehensive Notes, Questions, and Practice for Sindh Textbook Board</p>
+        </header>
+
+        <section id="notes" class="section">
+            <h3 class="text-success">Chapter Notes</h3>
+            <p>This chapter covers various methods of factorizing algebraic expressions and their applications.</p>
+            
+            <h4>What is Factorization?</h4>
+            <div class="definition">
+                <h5>Definition</h5>
+                <p>Factorization is the process of expressing an algebraic expression as a product of its factors.</p>
+                <p>If an expression E = F × G, then F and G are called factors of E.</p>
+            </div>
+
+            <div class="math-example">
+                <h5>Examples</h5>
+                <p>6x + 9 = 3(2x + 3) → Factors: 3 and (2x + 3)</p>
+                <p>x² - 4 = (x - 2)(x + 2) → Factors: (x - 2) and (x + 2)</p>
+                <p>x² + 5x + 6 = (x + 2)(x + 3) → Factors: (x + 2) and (x + 3)</p>
+            </div>
+
+            <h4>Methods of Factorization</h4>
+            
+            <div class="method-box">
+                <h5>1. Taking Common Factors</h5>
+                <p>Identify and take out the common factor from all terms.</p>
+                <div class="math-example">
+                    <p><strong>Example:</strong> 6x² + 9x = 3x(2x + 3)</p>
+                    <p><strong>Example:</strong> 4a²b + 6ab² = 2ab(2a + 3b)</p>
+                </div>
+            </div>
+
+            <div class="method-box">
+                <h5>2. Grouping of Terms</h5>
+                <p>Group terms with common factors and then factorize each group.</p>
+                <div class="math-example">
+                    <p><strong>Example:</strong> ax + ay + bx + by = a(x + y) + b(x + y) = (a + b)(x + y)</p>
+                    <p><strong>Example:</strong> x² + 3x + 2x + 6 = x(x + 3) + 2(x + 3) = (x + 2)(x + 3)</p>
+                </div>
+            </div>
+
+            <div class="method-box">
+                <h5>3. Using Algebraic Identities</h5>
+                <p>Apply standard algebraic identities to factorize expressions.</p>
+                <div class="formula-box">
+                    <ul>
+                        <li>a² - b² = (a - b)(a + b)</li>
+                        <li>a² + 2ab + b² = (a + b)²</li>
+                        <li>a² - 2ab + b² = (a - b)²</li>
+                        <li>a³ + b³ = (a + b)(a² - ab + b²)</li>
+                        <li>a³ - b³ = (a - b)(a² + ab + b²)</li>
+                        <li>a³ + b³ + c³ - 3abc = (a + b + c)(a² + b² + c² - ab - bc - ca)</li>
+                    </ul>
+                </div>
+                <div class="math-example">
+                    <p><strong>Example:</strong> x² - 9 = (x)² - (3)² = (x - 3)(x + 3)</p>
+                    <p><strong>Example:</strong> 4x² + 12x + 9 = (2x)² + 2(2x)(3) + (3)² = (2x + 3)²</p>
+                </div>
+            </div>
+
+            <div class="method-box">
+                <h5>4. Splitting the Middle Term (for Quadratic Expressions)</h5>
+                <p>For expressions of the form ax² + bx + c, find two numbers whose product is ac and sum is b.</p>
+                <div class="math-example">
+                    <p><strong>Example:</strong> x² + 5x + 6</p>
+                    <p>Find two numbers that multiply to 6 and add to 5: 2 and 3</p>
+                    <p>x² + 2x + 3x + 6 = x(x + 2) + 3(x + 2) = (x + 2)(x + 3)</p>
+                </div>
+            </div>
+
+            <div class="method-box">
+                <h5>5. Perfect Square Trinomials</h5>
+                <p>Recognize and factorize expressions that are perfect squares.</p>
+                <div class="math-example">
+                    <p><strong>Example:</strong> x² + 6x + 9 = (x + 3)²</p>
+                    <p><strong>Example:</strong> 4x² - 12x + 9 = (2x - 3)²</p>
+                </div>
+            </div>
+
+            <h4>Special Cases of Factorization</h4>
+            
+            <div class="special-case">
+                <h5>Factorization of Sum and Difference of Cubes</h5>
+                <div class="math-example">
+                    <p>x³ + 8 = x³ + 2³ = (x + 2)(x² - 2x + 4)</p>
+                    <p>27x³ - 1 = (3x)³ - 1³ = (3x - 1)(9x² + 3x + 1)</p>
+                </div>
+            </div>
+
+            <div class="special-case">
+                <h5>Factorization of Expressions with Higher Powers</h5>
+                <div class="math-example">
+                    <p>x⁴ - 16 = (x²)² - 4² = (x² - 4)(x² + 4) = (x - 2)(x + 2)(x² + 4)</p>
+                    <p>x⁶ - 64 = (x³)² - 8² = (x³ - 8)(x³ + 8)</p>
+                </div>
+            </div>
+
+            <h4>Applications of Factorization</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Simplifying algebraic expressions</li>
+                <li class="list-group-item">Solving quadratic equations</li>
+                <li class="list-group-item">Finding LCM and HCF of algebraic expressions</li>
+                <li class="list-group-item">Simplifying rational expressions</li>
+                <li class="list-group-item">Solving word problems</li>
+            </ul>
+        </section>
+
+        <section id="mcqs" class="section">
+            <h3 class="text-success">Multiple Choice Questions (MCQs)</h3>
+            <div class="mcq">
+                <p class="question">1. What are the factors of x² - 9?</p>
+                <p>a) (x-3)²<br>b) (x+3)²<br>c) (x-3)(x+3)<br>d) (x-9)(x+1)</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) (x-3)(x+3) (using a² - b² formula)</p>
+            </div>
+            <div class="mcq">
+                <p class="question">2. Factorize: 6x² + 9x</p>
+                <p>a) 3x(2x + 3)<br>b) 3(2x² + 3x)<br>c) 2x(3x + 9)<br>d) x(6x + 9)</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: a) 3x(2x + 3) (taking common factor)</p>
+            </div>
+            <div class="mcq">
+                <p class="question">3. Which method is used for x² + 5x + 6?</p>
+                <p>a) Common factor<br>b) Grouping<br>c) Splitting middle term<br>d) Using identities</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Splitting middle term (find numbers that multiply to 6 and add to 5)</p>
+            </div>
+            <div class="mcq">
+                <p class="question">4. Factorize: x³ + 8</p>
+                <p>a) (x+2)³<br>b) (x+2)(x²-2x+4)<br>c) (x+2)(x²+2x+4)<br>d) (x+4)(x²-4x+4)</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) (x+2)(x²-2x+4) (using a³ + b³ formula)</p>
+            </div>
+            <div class="mcq">
+                <p class="question">5. What is the common factor in 4a²b + 6ab²?</p>
+                <p>a) 2ab<br>b) 4ab<br>c) 2a²b<br>d) 6ab²</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: a) 2ab (greatest common factor)</p>
+            </div>
+            <div class="mcq">
+                <p class="question">6. Factorize: x² + 8x + 16</p>
+                <p>a) (x+4)²<br>b) (x+8)²<br>c) (x+2)(x+8)<br>d) (x+4)(x+4)</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: a) (x+4)² (perfect square trinomial)</p>
+            </div>
+            <div class="mcq">
+                <p class="question">7. Which is a factor of x² - 5x + 6?</p>
+                <p>a) x-1<br>b) x-2<br>c) x-4<br>d) x-6</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) x-2 (since (x-2)(x-3) = x² - 5x + 6)</p>
+            </div>
+            <div class="mcq">
+                <p class="question">8. Factorize: 9x² - 25</p>
+                <p>a) (3x-5)²<br>b) (3x+5)²<br>c) (3x-5)(3x+5)<br>d) (9x-5)(x+5)</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) (3x-5)(3x+5) (using a² - b² formula)</p>
+            </div>
+            <div class="mcq">
+                <p class="question">9. What method is used for ax + ay + bx + by?</p>
+                <p>a) Common factor<br>b) Grouping<br>c) Splitting middle term<br>d) Using identities</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) Grouping (group terms with common factors)</p>
+            </div>
+            <div class="mcq">
+                <p class="question">10. Factorize: x⁴ - 16</p>
+                <p>a) (x²-4)²<br>b) (x²-4)(x²+4)<br>c) (x-2)⁴<br>d) (x-4)(x³+4)</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) (x²-4)(x²+4) (using a² - b² formula twice)</p>
+            </div>
+        </section>
+
+        <section id="short-questions" class="section">
+            <h3 class="text-success">Short Questions</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Define factorization.</strong><br>Answer: Expressing an algebraic expression as a product of its factors.</li>
+                <li class="list-group-item"><strong>What is the common factor in 12x² + 18x?</strong><br>Answer: 6x (greatest common factor).</li>
+                <li class="list-group-item"><strong>Factorize: x² - 25</strong><br>Answer: (x-5)(x+5) using a² - b² formula.</li>
+                <li class="list-group-item"><strong>What method is used for x² + 7x + 12?</strong><br>Answer: Splitting the middle term.</li>
+                <li class="list-group-item"><strong>Factorize: 4x² - 9</strong><br>Answer: (2x-3)(2x+3) using a² - b² formula.</li>
+                <li class="list-group-item"><strong>What are the factors of x³ - 8?</strong><br>Answer: (x-2)(x²+2x+4) using a³ - b³ formula.</li>
+                <li class="list-group-item"><strong>Factorize by grouping: ax + bx + ay + by</strong><br>Answer: (a+b)(x+y).</li>
+                <li class="list-group-item"><strong>Is x² + 4x + 4 a perfect square?</strong><br>Answer: Yes, (x+2)².</li>
+                <li class="list-group-item"><strong>Factorize: 2x² + 8x + 6</strong><br>Answer: 2(x² + 4x + 3) = 2(x+1)(x+3).</li>
+                <li class="list-group-item"><strong>What is the relationship between factors and roots?</strong><br>Answer: If (x-a) is a factor, then x=a is a root of the equation.</li>
+            </ol>
+        </section>
+
+        <section id="long-questions" class="section">
+            <h3 class="text-success">Long Questions</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Explain different methods of factorization with examples.</strong><br>Answer: 1) Common factor: 6x+9=3(2x+3). 2) Grouping: ax+ay+bx+by=a(x+y)+b(x+y)=(a+b)(x+y). 3) Using identities: x²-9=(x-3)(x+3). 4) Splitting middle term: x²+5x+6=x²+2x+3x+6=x(x+2)+3(x+2)=(x+2)(x+3). 5) Perfect squares: x²+6x+9=(x+3)².</li>
+                <li class="list-group-item"><strong>Describe the process of factorization by splitting the middle term.</strong><br>Answer: For ax²+bx+c, find two numbers whose product is a×c and sum is b. Split the middle term using these numbers. Group the terms and factorize each group. Example: x²+5x+6. Product=6, sum=5. Numbers: 2 and 3. x²+2x+3x+6=x(x+2)+3(x+2)=(x+2)(x+3).</li>
+                <li class="list-group-item"><strong>Prove the algebraic identity a³ + b³ = (a+b)(a² - ab + b²).</strong><br>Answer: RHS = (a+b)(a² - ab + b²) = a(a² - ab + b²) + b(a² - ab + b²) = a³ - a²b + ab² + a²b - ab² + b³ = a³ + b³ = LHS. Hence proved.</li>
+                <li class="list-group-item"><strong>Explain factorization of perfect square trinomials with examples.</strong><br>Answer: A perfect square trinomial is of the form a² ± 2ab + b² = (a ± b)². Examples: x²+6x+9=(x)²+2(x)(3)+(3)²=(x+3)². 4x²-12x+9=(2x)²-2(2x)(3)+(3)²=(2x-3)². To recognize: first and last terms must be perfect squares, middle term must be twice the product of square roots.</li>
+                <li class="list-group-item"><strong>Discuss the applications of factorization in solving real-world problems.</strong><br>Answer: Factorization is used in: 1) Solving equations (quadratic equations), 2) Simplifying algebraic fractions, 3) Finding dimensions from area expressions, 4) Optimization problems, 5) Physics and engineering calculations, 6) Computer algorithms, 7) Cryptography. Example: Finding rectangle dimensions when area is given as x²+5x+6, factors give possible length and width.</li>
+            </ol>
+        </section>
+
+        <section id="exercises" class="section">
+            <h3 class="text-success">Practice Exercises</h3>
+            <p>Solve these practice problems based on Chapter 4 concepts. Click "Show Solution" to reveal the answer.</p>
+            <div class="exercise">
+                <p><strong>1. Factorize: 12x² + 18x</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: 12x² + 18x = 6x(2x + 3) (taking common factor)</div>
+            </div>
+            <div class="exercise">
+                <p><strong>2. Factorize: x² - 7x + 12</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: x² - 7x + 12 = x² - 3x - 4x + 12 = x(x - 3) - 4(x - 3) = (x - 3)(x - 4)</div>
+            </div>
+            <div class="exercise">
+                <p><strong>3. Factorize: 16x² - 25</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: 16x² - 25 = (4x)² - (5)² = (4x - 5)(4x + 5) (using a² - b² formula)</div>
+            </div>
+            <div class="exercise">
+                <p><strong>4. Factorize: x³ - 27</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: x³ - 27 = x³ - 3³ = (x - 3)(x² + 3x + 9) (using a³ - b³ formula)</div>
+            </div>
+            <div class="exercise">
+                <p><strong>5. Factorize: 2x² + 11x + 12</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: 2x² + 11x + 12 = 2x² + 8x + 3x + 12 = 2x(x + 4) + 3(x + 4) = (2x + 3)(x + 4)</div>
+            </div>
+            <div class="exercise">
+                <p><strong>6. Factorize: x⁴ - 81</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: x⁴ - 81 = (x²)² - (9)² = (x² - 9)(x² + 9) = (x - 3)(x + 3)(x² + 9)</div>
+            </div>
+            <div class="exercise">
+                <p><strong>7. Factorize: 3ax + 3ay + 2bx + 2by</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: 3ax + 3ay + 2bx + 2by = 3a(x + y) + 2b(x + y) = (3a + 2b)(x + y)</div>
+            </div>
+            <div class="exercise">
+                <p><strong>8. Factorize: 9x² + 24x + 16</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: 9x² + 24x + 16 = (3x)² + 2(3x)(4) + (4)² = (3x + 4)² (perfect square)</div>
+            </div>
+        </section>
+
+        <section id="quiz" class="section quiz-section">
+            <h3 class="text-success">Interactive Quiz</h3>
+            <p>Test your knowledge with this quick quiz!</p>
+            <div class="quiz-question">
+                <p>1. What is the factorization of x² - 16?</p>
+                <input type="radio" name="q1" value="(x-4)(x+4)"> (x-4)(x+4)<br>
+                <input type="radio" name="q1" value="(x-8)(x+8)"> (x-8)(x+8)<br>
+                <input type="radio" name="q1" value="(x-4)²"> (x-4)²<br>
+            </div>
+            <div class="quiz-question">
+                <p>2. Which method is used for x² + 6x + 8?</p>
+                <input type="radio" name="q2" value="Common factor"> Common factor<br>
+                <input type="radio" name="q2" value="Splitting middle term"> Splitting middle term<br>
+                <input type="radio" name="q2" value="Using identities"> Using identities<br>
+            </div>
+            <div class="quiz-question">
+                <p>3. What is the common factor in 15x² + 25x?</p>
+                <input type="radio" name="q3" value="5x"> 5x<br>
+                <input type="radio" name="q3" value="15x"> 15x<br>
+                <input type="radio" name="q3" value="25x"> 25x<br>
+            </div>
+            <button class="btn btn-primary" onclick="submitQuiz()">Submit Quiz</button>
+            <div id="quiz-result" class="quiz-result alert alert-info"></div>
+        </section>
+
+        <section id="important" class="section">
+            <h3 class="text-success">Important Points</h3>
+            <div class="important">
+                <ul>
+                    <li>Understand the definition and importance of factorization</li>
+                    <li>Master all methods: common factors, grouping, identities, splitting middle term</li>
+                    <li>Memorize key algebraic identities for factorization</li>
+                    <li>Practice recognizing perfect square trinomials</li>
+                    <li>Learn to factorize expressions with higher powers</li>
+                    <li>Understand the relationship between factors and roots of equations</li>
+                    <li>Practice factorizing quadratic expressions efficiently</li>
+                    <li>Learn applications of factorization in problem-solving</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Source: Sindh Textbook Board Mathematics Class 9. For more chapters or updates, refer to the official textbook. &copy; 2023 | <button class="btn btn-light btn-sm" onclick="window.print()">Print Page</button></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                button.textContent = 'Hide Answer';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'Show Answer';
+            }
+        }
+
+        function toggleSolution(button) {
+            const solution = button.nextElementSibling;
+            if (solution.style.display === 'none' || solution.style.display === '') {
+                solution.style.display = 'block';
+                button.textContent = 'Hide Solution';
+            } else {
+                solution.style.display = 'none';
+                button.textContent = 'Show Solution';
+            }
+        }
+
+        function submitQuiz() {
+            let score = 0;
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            
+            if (q1 && q1.value === '(x-4)(x+4)') score++;
+            if (q2 && q2.value === 'Splitting middle term') score++;
+            if (q3 && q3.value === '5x') score++;
+            
+            const result = document.getElementById('quiz-result');
+            result.innerHTML = `<h4>Your Score: ${score}/3</h4>`;
+            if (score === 3) {
+                result.innerHTML += '<p>Excellent! You have a good understanding of factorization.</p>';
+            } else if (score === 2) {
+                result.innerHTML += '<p>Good job! Review the topics you missed.</p>';
+            } else {
+                result.innerHTML += '<p>Keep studying! Review the chapter notes and try again.</p>';
+            }
+            result.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

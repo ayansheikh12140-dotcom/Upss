@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Data Communication and Computer Networks - Class 9 Sindh Textbook Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .navbar { background-color: #2E8B57 !important; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .section { margin-bottom: 40px; }
+        .mcq { background-color: #e9f7ef; padding: 15px; margin: 10px 0; border-left: 5px solid #2E8B57; border-radius: 5px; }
+        .question { font-weight: bold; }
+        .answer { margin-left: 20px; color: #555; display: none; }
+        .important { background-color: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; border-radius: 5px; }
+        .btn-toggle { margin-top: 10px; }
+        .quiz-section { background-color: #f0f8ff; padding: 20px; border-radius: 8px; }
+        .quiz-question { margin-bottom: 15px; }
+        .quiz-result { margin-top: 20px; display: none; }
+        footer { background-color: #343a40; color: white; padding: 20px; text-align: center; }
+        .numerical { background-color: #f8f9fa; padding: 15px; margin: 10px 0; border: 1px solid #dee2e6; border-radius: 5px; }
+        .numerical .solution { display: none; margin-top: 10px; }
+        .network-diagram { max-width: 100%; height: auto; margin: 15px 0; border: 1px solid #ddd; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Computer Science Class 9 - Sindh Board</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#notes">Notes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mcqs">MCQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#short-questions">Short Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#long-questions">Long Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#numericals">Numericals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#important">Important</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <header class="text-center mb-4">
+            <h1 class="text-success">Chapter 4: Data Communication and Computer Networks</h1>
+            <p class="lead">Comprehensive Notes, Questions, and Practice for Sindh Textbook Board</p>
+        </header>
+
+        <section id="notes" class="section">
+            <h3 class="text-success">Chapter Notes</h3>
+            <p>This chapter covers the fundamentals of data communication, transmission media, network types, and network topologies.</p>
+            
+            <h4>What is Data Communication?</h4>
+            <p>Data communication refers to the exchange of data between two devices via some form of transmission medium.</p>
+
+            <h4>Components of Data Communication</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Message:</strong> Information to be communicated.</li>
+                <li class="list-group-item"><strong>Sender:</strong> Device that sends the data message.</li>
+                <li class="list-group-item"><strong>Receiver:</strong> Device that receives the message.</li>
+                <li class="list-group-item"><strong>Transmission Medium:</strong> Physical path for message transmission.</li>
+                <li class="list-group-item"><strong>Protocol:</strong> Set of rules governing data communication.</li>
+            </ul>
+
+            <h4>Data Transmission Modes</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Simplex:</strong> One-way communication (e.g., keyboard to computer).</li>
+                <li class="list-group-item"><strong>Half-Duplex:</strong> Two-way communication, but not simultaneously (e.g., walkie-talkie).</li>
+                <li class="list-group-item"><strong>Full-Duplex:</strong> Two-way simultaneous communication (e.g., telephone).</li>
+            </ul>
+
+            <h4>Transmission Media</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Guided Media:</strong> Wired transmission (twisted pair, coaxial cable, fiber optics).</li>
+                <li class="list-group-item"><strong>Unguided Media:</strong> Wireless transmission (radio waves, microwaves, infrared).</li>
+            </ul>
+
+            <h4>Computer Networks</h4>
+            <p>A computer network is a collection of interconnected computers and devices to share resources and information.</p>
+
+            <h4>Types of Networks</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>LAN (Local Area Network):</strong> Connects devices in a limited area (e.g., school, office).</li>
+                <li class="list-group-item"><strong>MAN (Metropolitan Area Network):</strong> Covers a larger area like a city.</li>
+                <li class="list-group-item"><strong>WAN (Wide Area Network):</strong> Spans large geographical areas (e.g., internet).</li>
+            </ul>
+
+            <h4>Network Topologies</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Bus Topology:</strong> All devices connected to a single backbone cable.</li>
+                <li class="list-group-item"><strong>Star Topology:</strong> All devices connected to a central hub/switch.</li>
+                <li class="list-group-item"><strong>Ring Topology:</strong> Devices connected in a circular fashion.</li>
+                <li class="list-group-item"><strong>Mesh Topology:</strong> Every device connected to every other device.</li>
+            </ul>
+
+            <h4>Network Devices</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Modem:</strong> Modulates and demodulates signals for transmission.</li>
+                <li class="list-group-item"><strong>Router:</strong> Connects different networks and directs data packets.</li>
+                <li class="list-group-item"><strong>Switch:</strong> Connects devices within a network and forwards data.</li>
+                <li class="list-group-item"><strong>Hub:</strong> Basic networking device that connects multiple devices.</li>
+            </ul>
+
+            <h4>Network Protocols</h4>
+            <p>TCP/IP, HTTP, FTP, SMTP - rules that govern data communication over networks.</p>
+        </section>
+
+        <section id="mcqs" class="section">
+            <h3 class="text-success">Multiple Choice Questions (MCQs)</h3>
+            <div class="mcq">
+                <p class="question">1. Which transmission mode allows communication in both directions simultaneously?</p>
+                <p>a) Simplex<br>b) Half-Duplex<br>c) Full-Duplex<br>d) None of these</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Full-Duplex</p>
+            </div>
+            <div class="mcq">
+                <p class="question">2. Which network covers a large geographical area?</p>
+                <p>a) LAN<br>b) MAN<br>c) WAN<br>d) PAN</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) WAN</p>
+            </div>
+            <div class="mcq">
+                <p class="question">3. Which device connects different networks?</p>
+                <p>a) Hub<br>b) Switch<br>c) Router<br>d) Modem</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Router</p>
+            </div>
+            <div class="mcq">
+                <p class="question">4. In which topology all devices are connected to a central device?</p>
+                <p>a) Bus<br>b) Star<br>c) Ring<br>d) Mesh</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) Star</p>
+            </div>
+            <div class="mcq">
+                <p class="question">5. Which is an example of guided media?</p>
+                <p>a) Radio waves<br>b) Microwaves<br>c) Fiber optics<br>d) Infrared</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Fiber optics</p>
+            </div>
+            <div class="mcq">
+                <p class="question">6. What does LAN stand for?</p>
+                <p>a) Local Area Network<br>b) Large Area Network<br>c) Logical Area Network<br>d) Limited Area Network</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: a) Local Area Network</p>
+            </div>
+            <div class="mcq">
+                <p class="question">7. Which protocol is used for web browsing?</p>
+                <p>a) FTP<br>b) SMTP<br>c) HTTP<br>d) TCP/IP</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) HTTP</p>
+            </div>
+            <div class="mcq">
+                <p class="question">8. Which topology has a single backbone cable?</p>
+                <p>a) Star<br>b) Ring<br>c) Bus<br>d) Mesh</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Bus</p>
+            </div>
+            <div class="mcq">
+                <p class="question">9. What converts digital signals to analog and vice versa?</p>
+                <p>a) Router<br>b) Switch<br>c) Modem<br>d) Hub</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Modem</p>
+            </div>
+            <div class="mcq">
+                <p class="question">10. Which is not a component of data communication?</p>
+                <p>a) Message<br>b) Sender<br>c) Receiver<br>d) Electricity</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: d) Electricity</p>
+            </div>
+        </section>
+
+        <section id="short-questions" class="section">
+            <h3 class="text-success">Short Questions</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Define data communication.</strong><br>Answer: The exchange of data between two devices via a transmission medium.</li>
+                <li class="list-group-item"><strong>What is a computer network?</strong><br>Answer: A collection of interconnected computers and devices to share resources.</li>
+                <li class="list-group-item"><strong>Differentiate between LAN and WAN.</strong><br>Answer: LAN covers a small area like a building, while WAN covers large geographical areas.</li>
+                <li class="list-group-item"><strong>What is transmission media?</strong><br>Answer: The physical path through which data is transmitted from sender to receiver.</li>
+                <li class="list-group-item"><strong>Name three types of network topologies.</strong><br>Answer: Bus, Star, Ring, Mesh (any three).</li>
+                <li class="list-group-item"><strong>What is the function of a router?</strong><br>Answer: To connect different networks and direct data packets between them.</li>
+                <li class="list-group-item"><strong>Define simplex transmission mode.</strong><br>Answer: One-way communication where data flows in only one direction.</li>
+                <li class="list-group-item"><strong>What is a protocol in networking?</strong><br>Answer: A set of rules that govern data communication over a network.</li>
+                <li class="list-group-item"><strong>Give two examples of guided media.</strong><br>Answer: Twisted pair cable, coaxial cable, fiber optics (any two).</li>
+                <li class="list-group-item"><strong>What is the Internet?</strong><br>Answer: A global network of interconnected computer networks.</li>
+            </ol>
+        </section>
+
+        <section id="long-questions" class="section">
+            <h3 class="text-success">Long Questions</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Explain the components of data communication with examples.</strong><br>Answer: The five components are: Message (data to be communicated), Sender (device that sends data), Receiver (device that receives data), Transmission Medium (physical path), and Protocol (rules for communication). Example: Sending an email where computer is sender, message is email content, internet is medium, recipient's computer is receiver, and SMTP is protocol.</li>
+                <li class="list-group-item"><strong>Describe different types of computer networks.</strong><br>Answer: LAN (Local Area Network) connects devices in a limited area like a school or office. MAN (Metropolitan Area Network) covers a larger area like a city. WAN (Wide Area Network) spans large geographical areas like countries. PAN (Personal Area Network) connects devices in personal workspace.</li>
+                <li class="list-group-item"><strong>Compare and contrast different network topologies.</strong><br>Answer: Bus topology uses a single backbone cable but if it fails, entire network fails. Star topology connects all devices to a central hub - easy to install but hub failure affects all devices. Ring topology connects devices in a circle - data travels in one direction but failure of one device can break the ring. Mesh topology connects every device to every other device - highly reliable but expensive and complex.</li>
+                <li class="list-group-item"><strong>Explain different data transmission modes with examples.</strong><br>Answer: Simplex mode allows one-way communication only (e.g., keyboard to computer). Half-duplex allows two-way communication but not simultaneously (e.g., walkie-talkie). Full-duplex allows simultaneous two-way communication (e.g., telephone conversation).</li>
+                <li class="list-group-item"><strong>Discuss the importance of network protocols with examples.</strong><br>Answer: Protocols ensure standardized communication between devices. TCP/IP enables internet communication. HTTP allows web browsing. FTP facilitates file transfers. SMTP handles email transmission. Without protocols, different devices couldn't communicate effectively.</li>
+            </ol>
+        </section>
+
+        <section id="numericals" class="section">
+            <h3 class="text-success">Numerical Problems</h3>
+            <p>Practice these numerical problems based on Chapter 4 concepts (e.g., data transmission calculations). Click "Show Solution" to reveal the answer.</p>
+            <div class="numerical">
+                <p><strong>1. Calculate the time required to transfer a 2 MB file over a network with a bandwidth of 10 Mbps.</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: 2 MB = 16 Mb (since 1 byte = 8 bits). Time = Data Size / Bandwidth = 16 Mb / 10 Mbps = 1.6 seconds.</div>
+            </div>
+            <div class="numerical">
+                <p><strong>2. If a network has 12 computers in a mesh topology, how many cables are needed?</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: In mesh topology, number of cables = n(n-1)/2 where n is number of devices. So, 12(12-1)/2 = 12*11/2 = 66 cables.</div>
+            </div>
+            <div class="numerical">
+                <p><strong>3. A file of 5 MB is being downloaded at 2 MBps. How long will it take?</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: Time = File Size / Download Speed = 5 MB / 2 MBps = 2.5 seconds.</div>
+            </div>
+            <div class="numerical">
+                <p><strong>4. Calculate the number of connections in a star topology with 8 computers.</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: In star topology, each computer connects to a central hub. So, number of connections = number of computers = 8.</div>
+            </div>
+            <div class="numerical">
+                <p><strong>5. If a signal takes 0.002 seconds to travel through a cable, what is the latency?</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: Latency is the time delay in transmission. Here, latency = 0.002 seconds or 2 milliseconds.</div>
+            </div>
+        </section>
+
+        <section id="quiz" class="section quiz-section">
+            <h3 class="text-success">Interactive Quiz</h3>
+            <p>Test your knowledge with this quick quiz!</p>
+            <div class="quiz-question">
+                <p>1. Which network covers a city?</p>
+                <input type="radio" name="q1" value="LAN"> LAN<br>
+                <input type="radio" name="q1" value="MAN"> MAN<br>
+                <input type="radio" name="q1" value="WAN"> WAN<br>
+            </div>
+            <div class="quiz-question">
+                <p>2. Which transmission mode is used in walkie-talkies?</p>
+                <input type="radio" name="q2" value="Simplex"> Simplex<br>
+                <input type="radio" name="q2" value="Half-Duplex"> Half-Duplex<br>
+                <input type="radio" name="q2" value="Full-Duplex"> Full-Duplex<br>
+            </div>
+            <div class="quiz-question">
+                <p>3. Which device connects computers within a LAN?</p>
+                <input type="radio" name="q3" value="Router"> Router<br>
+                <input type="radio" name="q3" value="Switch"> Switch<br>
+                <input type="radio" name="q3" value="Modem"> Modem<br>
+            </div>
+            <button class="btn btn-primary" onclick="submitQuiz()">Submit Quiz</button>
+            <div id="quiz-result" class="quiz-result alert alert-info"></div>
+        </section>
+
+        <section id="important" class="section">
+            <h3 class="text-success">Important Points</h3>
+            <div class="important">
+                <ul>
+                    <li>Understand the components of data communication system.</li>
+                    <li>Memorize different transmission modes and their examples.</li>
+                    <li>Differentiate between types of networks (LAN, MAN, WAN).</li>
+                    <li>Know various network topologies and their advantages/disadvantages.</li>
+                    <li>Learn about different network devices and their functions.</li>
+                    <li>Understand common network protocols and their uses.</li>
+                    <li>Practice numerical problems related to data transmission.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Source: Sindh Textbook Board Computer Science Class 9. For more chapters or updates, refer to the official textbook. &copy; 2023 | <button class="btn btn-light btn-sm" onclick="window.print()">Print Page</button></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                button.textContent = 'Hide Answer';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'Show Answer';
+            }
+        }
+
+        function toggleSolution(button) {
+            const solution = button.nextElementSibling;
+            if (solution.style.display === 'none' || solution.style.display === '') {
+                solution.style.display = 'block';
+                button.textContent = 'Hide Solution';
+            } else {
+                solution.style.display = 'none';
+                button.textContent = 'Show Solution';
+            }
+        }
+
+        function submitQuiz() {
+            let score = 0;
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            
+            if (q1 && q1.value === 'MAN') score++;
+            if (q2 && q2.value === 'Half-Duplex') score++;
+            if (q3 && q3.value === 'Switch') score++;
+            
+            const result = document.getElementById('quiz-result');
+            result.innerHTML = `<h4>Your Score: ${score}/3</h4>`;
+            if (score === 3) {
+                result.innerHTML += '<p>Excellent! You have a good understanding of data communication and networks.</p>';
+            } else if (score === 2) {
+                result.innerHTML += '<p>Good job! Review the topics you missed.</p>';
+            } else {
+                result.innerHTML += '<p>Keep studying! Review the chapter notes and try again.</p>';
+            }
+            result.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

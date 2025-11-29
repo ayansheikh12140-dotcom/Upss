@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Real and Complex Numbers - Class 9 Mathematics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .navbar { background-color: #2E8B57 !important; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .section { margin-bottom: 40px; }
+        .mcq { background-color: #e9f7ef; padding: 15px; margin: 10px 0; border-left: 5px solid #2E8B57; border-radius: 5px; }
+        .question { font-weight: bold; }
+        .answer { margin-left: 20px; color: #555; display: none; }
+        .important { background-color: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; border-radius: 5px; }
+        .btn-toggle { margin-top: 10px; }
+        .quiz-section { background-color: #f0f8ff; padding: 20px; border-radius: 8px; }
+        .quiz-question { margin-bottom: 15px; }
+        .quiz-result { margin-top: 20px; display: none; }
+        footer { background-color: #343a40; color: white; padding: 20px; text-align: center; }
+        .exercise { background-color: #f8f9fa; padding: 15px; margin: 10px 0; border: 1px solid #dee2e6; border-radius: 5px; }
+        .exercise .solution { display: none; margin-top: 10px; }
+        .math-example { background-color: #e8f4f8; padding: 15px; margin: 10px 0; border-left: 5px solid #17a2b8; border-radius: 5px; }
+        .definition { background-color: #f0e6ff; padding: 15px; margin: 10px 0; border-left: 5px solid #6f42c1; border-radius: 5px; }
+        .formula-box { background-color: #fff3e6; padding: 15px; margin: 10px 0; border-left: 5px solid #fd7e14; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mathematics Class 9 - Sindh Board</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#notes">Notes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mcqs">MCQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#short-questions">Short Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#long-questions">Long Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#exercises">Exercises</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#important">Important</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <header class="text-center mb-4">
+            <h1 class="text-success">Chapter 1: Real and Complex Numbers</h1>
+            <p class="lead">Comprehensive Notes, Questions, and Practice for Sindh Textbook Board</p>
+        </header>
+
+        <section id="notes" class="section">
+            <h3 class="text-success">Chapter Notes</h3>
+            <p>This chapter covers real numbers, complex numbers, and their properties with applications in mathematics.</p>
+            
+            <h4>Real Numbers</h4>
+            <div class="definition">
+                <h5>Definition</h5>
+                <p>Real numbers include all rational and irrational numbers that can be represented on the number line.</p>
+            </div>
+
+            <h5>Types of Real Numbers</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Natural Numbers (N):</strong> Counting numbers {1, 2, 3, ...}</li>
+                <li class="list-group-item"><strong>Whole Numbers (W):</strong> Natural numbers including 0 {0, 1, 2, 3, ...}</li>
+                <li class="list-group-item"><strong>Integers (Z):</strong> Whole numbers and their negatives {..., -3, -2, -1, 0, 1, 2, 3, ...}</li>
+                <li class="list-group-item"><strong>Rational Numbers (Q):</strong> Numbers that can be expressed as p/q where p,q ∈ Z and q ≠ 0</li>
+                <li class="list-group-item"><strong>Irrational Numbers:</strong> Numbers that cannot be expressed as p/q (e.g., √2, π)</li>
+            </ul>
+
+            <div class="math-example">
+                <h5>Examples</h5>
+                <p><strong>Rational:</strong> 2/3, -5, 0.75, 0.333... (1/3)</p>
+                <p><strong>Irrational:</strong> √2, π, e, √3</p>
+            </div>
+
+            <h4>Properties of Real Numbers</h4>
+            <div class="formula-box">
+                <ul>
+                    <li><strong>Commutative Property:</strong> a + b = b + a; a × b = b × a</li>
+                    <li><strong>Associative Property:</strong> (a + b) + c = a + (b + c); (a × b) × c = a × (b × c)</li>
+                    <li><strong>Distributive Property:</strong> a × (b + c) = a × b + a × c</li>
+                    <li><strong>Additive Identity:</strong> a + 0 = a</li>
+                    <li><strong>Multiplicative Identity:</strong> a × 1 = a</li>
+                    <li><strong>Additive Inverse:</strong> a + (-a) = 0</li>
+                    <li><strong>Multiplicative Inverse:</strong> a × (1/a) = 1 (a ≠ 0)</li>
+                </ul>
+            </div>
+
+            <h4>Complex Numbers</h4>
+            <div class="definition">
+                <h5>Definition</h5>
+                <p>A complex number is expressed in the form a + bi, where:
+                <br>a = real part, b = imaginary part, i = √(-1) where i² = -1</p>
+            </div>
+
+            <h5>Operations with Complex Numbers</h5>
+            <div class="formula-box">
+                <ul>
+                    <li><strong>Addition:</strong> (a + bi) + (c + di) = (a + c) + (b + d)i</li>
+                    <li><strong>Subtraction:</strong> (a + bi) - (c + di) = (a - c) + (b - d)i</li>
+                    <li><strong>Multiplication:</strong> (a + bi)(c + di) = (ac - bd) + (ad + bc)i</li>
+                    <li><strong>Division:</strong> (a + bi)/(c + di) = [(a + bi)(c - di)]/(c² + d²)</li>
+                    <li><strong>Conjugate:</strong> Conjugate of (a + bi) is (a - bi)</li>
+                </ul>
+            </div>
+
+            <div class="math-example">
+                <h5>Complex Number Examples</h5>
+                <p><strong>Example 1:</strong> (3 + 2i) + (1 + 4i) = 4 + 6i</p>
+                <p><strong>Example 2:</strong> (5 + 3i)(2 + i) = 10 + 5i + 6i + 3i² = 10 + 11i - 3 = 7 + 11i</p>
+                <p><strong>Example 3:</strong> Conjugate of (4 - 7i) is (4 + 7i)</p>
+            </div>
+
+            <h4>Number Line Representation</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Real numbers can be represented on a straight horizontal line</li>
+                <li class="list-group-item">Complex numbers are represented on the Argand plane (real axis and imaginary axis)</li>
+            </ul>
+        </section>
+
+        <section id="mcqs" class="section">
+            <h3 class="text-success">Multiple Choice Questions (MCQs)</h3>
+            <div class="mcq">
+                <p class="question">1. Which of the following is an irrational number?</p>
+                <p>a) 3/4<br>b) 0.5<br>c) √9<br>d) √2</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: d) √2</p>
+            </div>
+            <div class="mcq">
+                <p class="question">2. What is the value of i²?</p>
+                <p>a) 1<br>b) -1<br>c) 0<br>d) i</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) -1</p>
+            </div>
+            <div class="mcq">
+                <p class="question">3. Which property is demonstrated by: a × (b + c) = a × b + a × c?</p>
+                <p>a) Commutative<br>b) Associative<br>c) Distributive<br>d) Identity</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Distributive</p>
+            </div>
+            <div class="mcq">
+                <p class="question">4. What is the conjugate of 5 - 3i?</p>
+                <p>a) 5 + 3i<br>b) -5 + 3i<br>c) -5 - 3i<br>d) 3 - 5i</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: a) 5 + 3i</p>
+            </div>
+            <div class="mcq">
+                <p class="question">5. Which set of numbers includes all the others?</p>
+                <p>a) Natural numbers<br>b) Whole numbers<br>c) Integers<br>d) Real numbers</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: d) Real numbers</p>
+            </div>
+            <div class="mcq">
+                <p class="question">6. The sum of a complex number and its conjugate is always:</p>
+                <p>a) A real number<br>b) An imaginary number<br>c) Zero<br>d) A complex number</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: a) A real number</p>
+            </div>
+            <div class="mcq">
+                <p class="question">7. Which of these is a rational number?</p>
+                <p>a) π<br>b) √5<br>c) 0.333...<br>d) e</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) 0.333... (which equals 1/3)</p>
+            </div>
+            <div class="mcq">
+                <p class="question">8. What is the multiplicative inverse of 2 + 3i?</p>
+                <p>a) 2 - 3i<br>b) 1/(2 + 3i)<br>c) -2 - 3i<br>d) (2 - 3i)/13</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: d) (2 - 3i)/13</p>
+            </div>
+            <div class="mcq">
+                <p class="question">9. The set of integers is denoted by:</p>
+                <p>a) N<br>b) W<br>c) Z<br>d) Q</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Z</p>
+            </div>
+            <div class="mcq">
+                <p class="question">10. (3 + 4i) - (1 + 2i) equals:</p>
+                <p>a) 2 + 2i<br>b) 4 + 6i<br>c) 2 + 6i<br>d) 4 + 2i</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: a) 2 + 2i</p>
+            </div>
+        </section>
+
+        <section id="short-questions" class="section">
+            <h3 class="text-success">Short Questions</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Define rational numbers with examples.</strong><br>Answer: Numbers that can be expressed as p/q where p and q are integers and q ≠ 0. Examples: 2/3, -5, 0.75.</li>
+                <li class="list-group-item"><strong>What are irrational numbers? Give two examples.</strong><br>Answer: Numbers that cannot be expressed as p/q. Examples: √2, π.</li>
+                <li class="list-group-item"><strong>State the commutative property of addition.</strong><br>Answer: a + b = b + a for any real numbers a and b.</li>
+                <li class="list-group-item"><strong>What is a complex number?</strong><br>Answer: A number of the form a + bi where a and b are real numbers and i = √(-1).</li>
+                <li class="list-group-item"><strong>Find the conjugate of 7 - 4i.</strong><br>Answer: 7 + 4i.</li>
+                <li class="list-group-item"><strong>What is the additive identity of real numbers?</strong><br>Answer: 0, because a + 0 = a for any real number a.</li>
+                <li class="list-group-item"><strong>Simplify: (2 + 3i) + (4 - 5i)</strong><br>Answer: 6 - 2i.</li>
+                <li class="list-group-item"><strong>Differentiate between real and complex numbers.</strong><br>Answer: Real numbers can be represented on a number line, while complex numbers require a plane with real and imaginary axes.</li>
+                <li class="list-group-item"><strong>What is the multiplicative inverse of 5?</strong><br>Answer: 1/5.</li>
+                <li class="list-group-item"><strong>Is zero a rational number? Justify.</strong><br>Answer: Yes, because it can be expressed as 0/1, 0/2, etc.</li>
+            </ol>
+        </section>
+
+        <section id="long-questions" class="section">
+            <h3 class="text-success">Long Questions</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Explain the different types of real numbers with examples for each.</strong><br>Answer: Natural numbers (1,2,3...), Whole numbers (0,1,2,3...), Integers (...,-2,-1,0,1,2...), Rational numbers (2/3, -4, 0.5), Irrational numbers (√2, π). Real numbers include all these sets.</li>
+                <li class="list-group-item"><strong>Describe the properties of real numbers with examples.</strong><br>Answer: Commutative (3+5=5+3), Associative (2+(3+4)=(2+3)+4), Distributive (2×(3+4)=2×3+2×4), Identity properties (7+0=7, 9×1=9), Inverse properties (5+(-5)=0, 4×(1/4)=1).</li>
+                <li class="list-group-item"><strong>Explain complex numbers and their operations in detail.</strong><br>Answer: Complex numbers are of form a+bi. Addition: (a+bi)+(c+di)=(a+c)+(b+d)i. Subtraction: (a+bi)-(c+di)=(a-c)+(b-d)i. Multiplication: (a+bi)(c+di)=(ac-bd)+(ad+bc)i. Division uses conjugates to rationalize denominator.</li>
+                <li class="list-group-item"><strong>Prove that the sum of a complex number and its conjugate is a real number.</strong><br>Answer: Let z = a+bi, then conjugate ž = a-bi. Sum = (a+bi)+(a-bi) = 2a, which is a real number since it has no imaginary part.</li>
+                <li class="list-group-item"><strong>Discuss the representation of numbers on the number line and Argand diagram.</strong><br>Answer: Real numbers are represented on a horizontal number line. Complex numbers are represented on the Argand plane where x-axis represents real part and y-axis represents imaginary part. Point (a,b) represents complex number a+bi.</li>
+            </ol>
+        </section>
+
+        <section id="exercises" class="section">
+            <h3 class="text-success">Practice Exercises</h3>
+            <p>Solve these practice problems based on Chapter 1 concepts. Click "Show Solution" to reveal the answer.</p>
+            <div class="exercise">
+                <p><strong>1. Simplify: (3 + 2i)(4 - i)</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: (3 + 2i)(4 - i) = 12 - 3i + 8i - 2i² = 12 + 5i - 2(-1) = 12 + 5i + 2 = 14 + 5i</div>
+            </div>
+            <div class="exercise">
+                <p><strong>2. Find the conjugate of (5 - 7i) and verify that their product is real.</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: Conjugate = 5 + 7i. Product = (5 - 7i)(5 + 7i) = 25 + 35i - 35i - 49i² = 25 - 49(-1) = 25 + 49 = 74 (real number)</div>
+            </div>
+            <div class="exercise">
+                <p><strong>3. Identify the property: 8 × (9 + 2) = 8 × 9 + 8 × 2</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: Distributive property of multiplication over addition.</div>
+            </div>
+            <div class="exercise">
+                <p><strong>4. Divide: (6 + 8i) ÷ (2 + i)</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: (6 + 8i)/(2 + i) = [(6 + 8i)(2 - i)]/[(2 + i)(2 - i)] = [12 - 6i + 16i - 8i²]/[4 - i²] = [12 + 10i + 8]/[4 + 1] = (20 + 10i)/5 = 4 + 2i</div>
+            </div>
+            <div class="exercise">
+                <p><strong>5. Classify the following numbers as rational or irrational: √16, √5, 0.75, π</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: √16 = 4 (rational), √5 (irrational), 0.75 = 3/4 (rational), π (irrational)</div>
+            </div>
+            <div class="exercise">
+                <p><strong>6. Simplify: i³ + i⁴ + i⁵</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: i³ = -i, i⁴ = 1, i⁵ = i. Sum = -i + 1 + i = 1</div>
+            </div>
+            <div class="exercise">
+                <p><strong>7. Find the multiplicative inverse of 3 - 4i</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: 1/(3 - 4i) = (3 + 4i)/[(3 - 4i)(3 + 4i)] = (3 + 4i)/(9 + 16) = (3 + 4i)/25 = 3/25 + (4/25)i</div>
+            </div>
+        </section>
+
+        <section id="quiz" class="section quiz-section">
+            <h3 class="text-success">Interactive Quiz</h3>
+            <p>Test your knowledge with this quick quiz!</p>
+            <div class="quiz-question">
+                <p>1. Which of these is an irrational number?</p>
+                <input type="radio" name="q1" value="0.5"> 0.5<br>
+                <input type="radio" name="q1" value="√4"> √4<br>
+                <input type="radio" name="q1" value="√7"> √7<br>
+            </div>
+            <div class="quiz-question">
+                <p>2. What is the value of i²?</p>
+                <input type="radio" name="q2" value="1"> 1<br>
+                <input type="radio" name="q2" value="-1"> -1<br>
+                <input type="radio" name="q2" value="0"> 0<br>
+            </div>
+            <div class="quiz-question">
+                <p>3. The conjugate of 2 - 5i is:</p>
+                <input type="radio" name="q3" value="2+5i"> 2 + 5i<br>
+                <input type="radio" name="q3" value="-2+5i"> -2 + 5i<br>
+                <input type="radio" name="q3" value="-2-5i"> -2 - 5i<br>
+            </div>
+            <button class="btn btn-primary" onclick="submitQuiz()">Submit Quiz</button>
+            <div id="quiz-result" class="quiz-result alert alert-info"></div>
+        </section>
+
+        <section id="important" class="section">
+            <h3 class="text-success">Important Points</h3>
+            <div class="important">
+                <ul>
+                    <li>Understand the classification of real numbers (natural, whole, integers, rational, irrational)</li>
+                    <li>Memorize all properties of real numbers with examples</li>
+                    <li>Learn the definition and representation of complex numbers</li>
+                    <li>Practice operations with complex numbers (addition, subtraction, multiplication, division)</li>
+                    <li>Understand the concept of conjugates and their properties</li>
+                    <li>Know how to represent numbers on number line and complex numbers on Argand plane</li>
+                    <li>Remember that i² = -1 and the pattern of powers of i (i, -1, -i, 1)</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Source: Sindh Textbook Board Mathematics Class 9. For more chapters or updates, refer to the official textbook. &copy; 2023 | <button class="btn btn-light btn-sm" onclick="window.print()">Print Page</button></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                button.textContent = 'Hide Answer';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'Show Answer';
+            }
+        }
+
+        function toggleSolution(button) {
+            const solution = button.nextElementSibling;
+            if (solution.style.display === 'none' || solution.style.display === '') {
+                solution.style.display = 'block';
+                button.textContent = 'Hide Solution';
+            } else {
+                solution.style.display = 'none';
+                button.textContent = 'Show Solution';
+            }
+        }
+
+        function submitQuiz() {
+            let score = 0;
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const q3 = document.querySelector('input[name="q3"]:checked');
+            
+            if (q1 && q1.value === '√7') score++;
+            if (q2 && q2.value === '-1') score++;
+            if (q3 && q3.value === '2+5i') score++;
+            
+            const result = document.getElementById('quiz-result');
+            result.innerHTML = `<h4>Your Score: ${score}/3</h4>`;
+            if (score === 3) {
+                result.innerHTML += '<p>Excellent! You have a good understanding of real and complex numbers.</p>';
+            } else if (score === 2) {
+                result.innerHTML += '<p>Good job! Review the topics you missed.</p>';
+            } else {
+                result.innerHTML += '<p>Keep studying! Review the chapter notes and try again.</p>';
+            }
+            result.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

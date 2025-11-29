@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Turning Effect of Forces - Class 9 Sindh Textbook Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        /* Theme focused on rotation and stability (e.g., deep maroon/grey accents) */
+        .navbar { background-color: #4e342e !important; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .section { margin-bottom: 40px; }
+        /* Light pink/grey background for MCQs */
+        .mcq { background-color: #fbe9e7; padding: 15px; margin: 10px 0; border-left: 5px solid #d84315; border-radius: 5px; }
+        .question { font-weight: bold; }
+        .answer { margin-left: 20px; color: #555; display: none; }
+        /* Light brown background for important notes */
+        .important { background-color: #efebe9; padding: 15px; border-left: 5px solid #6d4c41; border-radius: 5px; }
+        .btn-toggle { margin-top: 10px; }
+        /* Light blue/grey background for the quiz */
+        .quiz-section { background-color: #cfd8dc; padding: 20px; border-radius: 8px; }
+        .quiz-question { margin-bottom: 15px; }
+        .quiz-result { margin-top: 20px; display: none; }
+        footer { background-color: #3e2723; color: white; padding: 20px; text-align: center; }
+        .numerical { background-color: #f8f9fa; padding: 15px; margin: 10px 0; border: 1px solid #dee2e6; border-radius: 5px; }
+        .numerical .solution { display: none; margin-top: 10px; }
+        .physics-formula { background-color: #fbe9e7; padding: 10px; border-radius: 5px; margin-top: 10px; }
+        .table-responsive { margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Physics Class 9 - Sindh Board</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#notes">Notes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#concepts">Concepts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mcqs">MCQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#short-questions">Short Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#long-questions">Long Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#numerical">Numericals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#important">Important</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <header class="text-center mb-4">
+            <h1 style="color: #4e342e;">Chapter 4: Turning Effect of Forces 🔄</h1>
+            <p class="lead">Understanding Torque, Center of Mass, and Equilibrium</p>
+        </header>
+
+        <section id="notes" class="section">
+            <h3 style="color: #4e342e;">Core Concepts 📌</h3>
+            <p>While previous chapters dealt with linear motion, this chapter explores the motion caused by forces that results in **rotation**.</p>
+
+            <h4>1. Parallel Forces</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">**Definition:** Forces that are parallel to each other.</li>
+                <li class="list-group-item">**Types:** **Like Parallel Forces** (act in the same direction) and **Unlike Parallel Forces** (act in opposite directions).</li>
+                <li class="list-group-item">**Resultant Force:** The single force that has the same effect as all the individual forces combined. Calculated by vector addition.</li>
+            </ul>
+
+            <h4 class="mt-4">2. Torque (Moment of Force)</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">**Definition:** The **turning effect** produced by a force. It is also called the **Moment of Force**.</li>
+                <li class="list-group-item">**Formula:** Torque ($\tau$) is the product of the force ($F$) and the moment arm ($L$).
+                    <div class="physics-formula">$$\tau = F \times L$$</div>
+                </li>
+                <li class="list-group-item">**Moment Arm ($L$):** The perpendicular distance from the axis of rotation (pivot) to the line of action of the force. </li>
+                <li class="list-group-item">**SI Unit:** Newton-meter ($\text{N}\cdot\text{m}$).</li>
+                <li class="list-group-item">**Direction:** Conventionally, **Counter-Clockwise** torque is positive, and **Clockwise** torque is negative.</li>
+            </ul>
+        </section>
+
+        <section id="concepts" class="section">
+            <h3 style="color: #4e342e;">Center of Mass and Equilibrium</h3>
+            
+            <h4>1. Center of Mass (CM)</h4>
+            <p>A point in a body where an applied force causes only **linear acceleration** without producing any rotation. The entire mass of the body can be considered to be concentrated at this point.</p>
+            
+            <h4>2. Center of Gravity (CG)</h4>
+            <p>A point in a body where the **weight** of the body appears to act. For objects on Earth, the Center of Gravity and Center of Mass are often considered the same.</p>
+
+            <h4>3. Principle of Moments</h4>
+            <p>For a body to be in **rotational equilibrium**, the sum of the **clockwise moments** acting on it must be equal to the sum of the **counter-clockwise moments** about the same axis.</p>
+
+            <h4 class="mt-4">4. Equilibrium</h4>
+            <p>When a body is in a state of **balance**. It satisfies two conditions:</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">**First Condition (Translational Equilibrium):** The net force ($\Sigma F$) acting on the body must be zero. The body is either at rest or moving with uniform velocity. $$\sum \vec{F}_x = 0 \text{ and } \sum \vec{F}_y = 0$$</li>
+                <li class="list-group-item">**Second Condition (Rotational Equilibrium):** The net torque ($\Sigma \tau$) acting on the body must be zero. The body is not rotating or is rotating with uniform angular velocity. $$\sum \tau = 0$$</li>
+            </ul>
+            
+            <h4>5. States of Equilibrium</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">**Stable Equilibrium:** When slightly disturbed, the body tends to return to its original position (e.g., a brick lying flat). The CG is raised during disturbance.</li>
+                <li class="list-group-item">**Unstable Equilibrium:** When slightly disturbed, the body topples over to a lower energy state (e.g., a cone balanced on its tip). The CG is lowered during disturbance.</li>
+                <li class="list-group-item">**Neutral Equilibrium:** When disturbed, the body remains in the new position (e.g., a ball rolling on a flat surface). The CG remains at the same height.</li>
+            </ul>
+        </section>
+        
+        <section id="mcqs" class="section">
+            <h3 style="color: #4e342e;">Multiple Choice Questions (MCQs) ❓</h3>
+            <div class="mcq">
+                <p class="question">1. The turning effect of a force is called:</p>
+                <p>a) Inertia<br>b) Momentum<br>c) Torque<br>d) Force couple</p>
+                <button class="btn btn-sm btn-danger btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Torque</p>
+            </div>
+            <div class="mcq">
+                <p class="question">2. The SI unit of Torque is:</p>
+                <p>a) Joule<br>b) Newton<br>c) $\text{Newton}\cdot\text{meter}$<br>d) $\text{Watt}$</p>
+                <button class="btn btn-sm btn-danger btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) $\text{Newton}\cdot\text{meter}$</p>
+            </div>
+            <div class="mcq">
+                <p class="question">3. For a body to be in complete equilibrium, the net force and net torque must both be:</p>
+                <p>a) Equal to unity<br>b) Maximum<br>c) Zero<br>d) Constant</p>
+                <button class="btn btn-sm btn-danger btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Zero</p>
+            </div>
+            <div class="mcq">
+                <p class="question">4. The stability of a body is increased by:</p>
+                <p>a) Raising the Center of Gravity<br>b) Widening the base<br>c) Narrowing the base<br>d) Reducing the mass</p>
+                <button class="btn btn-sm btn-danger btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) Widening the base</p>
+            </div>
+        </section>
+
+        <section id="short-questions" class="section">
+            <h3 style="color: #4e342e;">Short Questions 📝</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item">**Define the Moment Arm.**<br>Answer: The Moment Arm is the **perpendicular distance** from the axis of rotation (pivot) to the line of action of the force.</li>
+                <li class="list-group-item">**What is the Principle of Moments?**<br>Answer: It states that for a body in rotational equilibrium, the sum of all clockwise moments acting on the body must be equal to the sum of all counter-clockwise moments.</li>
+                <li class="list-group-item">**State the two conditions for complete equilibrium.**<br>Answer: 1) **First Condition (Translational):** Net force ($\sum \vec{F}$) must be zero. 2) **Second Condition (Rotational):** Net torque ($\sum \tau$) must be zero.</li>
+                <li class="list-group-item">**What is the difference between Center of Mass and Center of Gravity?**<br>Answer: **Center of Mass** is the point where an applied force causes linear motion only. **Center of Gravity** is the point where the weight of the body acts. They are usually the same near the Earth's surface.</li>
+                <li class="list-group-item">**How can the stability of a body be increased?**<br>Answer: Stability can be increased by **lowering the Center of Gravity** and/or **increasing the width of the base** of the object.</li>
+            </ol>
+        </section>
+
+        <section id="long-questions" class="section">
+            <h3 style="color: #4e342e;">Long Questions 📚</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item">**Define Torque. Explain the factors on which the turning effect of a force depends.**<br>Answer: **Torque** is the turning effect of a force about an axis. It depends on two factors: **1) Magnitude of the Force ($F$):** A larger force produces greater torque. **2) Length of the Moment Arm ($L$):** A longer perpendicular distance from the pivot to the force (longer moment arm) produces a greater torque ($\tau = F \times L$). This is why it's easier to open a door by pushing it at the handle rather than near the hinge.</li>
+                <li class="list-group-item">**Explain the three states of equilibrium with examples of each.**<br>Answer: **Stable:** Body returns to its original position when disturbed (e.g., a book lying flat). **Unstable:** Body moves to a new, lower energy position when disturbed (e.g., a pencil balanced on its tip). **Neutral:** Body remains in the new position when disturbed, with its CG staying at the same height (e.g., a billiard ball on a table). 
+
+[Image of the three states of equilibrium: stable, unstable, and neutral]
+</li>
+                <li class="list-group-item">**Derive the relationship for the resultant of two unlike parallel forces acting on a body.**<br>Answer: The resultant force ($R$) of two unlike parallel forces ($F_1$ and $F_2$, where $F_1 > F_2$) is their difference: $R = F_1 - F_2$. The direction of $R$ is the same as the larger force ($F_1$). The point of action of $R$ is found by the condition of rotational equilibrium (Principle of Moments), such that $R \times r = F_1 \times r_1 + F_2 \times r_2$, where $r_1$ and $r_2$ are distances from the pivot. More simply, the resultant acts outside $F_1$ and $F_2$, closer to the larger force.</li>
+            </ol>
+        </section>
+
+        <section id="numerical" class="section">
+            <h3 style="color: #4e342e;">Numerical Problems 🔢</h3>
+            <p>Practice calculating Torque and using the Principle of Moments.</p>
+            <div class="numerical">
+                <p><strong>1. A force of $20 \text{ N}$ acts perpendicularly on a door at a distance of $0.8 \text{ m}$ from the hinges. Calculate the torque produced.</strong></p>
+                <button class="btn btn-sm btn-info" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Given: $F = 20 \text{ N}$, $L = 0.8 \text{ m}$.
+                    Using $\tau = F \times L$:
+                    $$\tau = (20 \text{ N}) \times (0.8 \text{ m}) = 16 \text{ N}\cdot\text{m}$$
+                </div>
+            </div>
+            <div class="numerical">
+                <p><strong>2. A meter rod is balanced at the $50 \text{ cm}$ mark. If a weight of $5 \text{ N}$ is placed at the $10 \text{ cm}$ mark, where must a weight of $20 \text{ N}$ be placed to keep it balanced?</strong></p>
+                <button class="btn btn-sm btn-info" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Pivot is at $50 \text{ cm}$.
+                    $F_1 = 5 \text{ N}$ (Counter-clockwise), $L_1 = (50 - 10) \text{ cm} = 40 \text{ cm}$.
+                    $F_2 = 20 \text{ N}$ (Clockwise), $L_2 = x \text{ cm}$ (distance from $50 \text{ cm}$ mark).
+                    Principle of Moments: $\tau_{\text{CCW}} = \tau_{\text{CW}}$
+                    $$F_1 L_1 = F_2 L_2$$
+                    $$(5 \text{ N})(40 \text{ cm}) = (20 \text{ N}) L_2$$
+                    $$200 = 20 L_2 \Rightarrow L_2 = 10 \text{ cm}$$
+                    The $20 \text{ N}$ weight must be placed $10 \text{ cm}$ from the pivot, at the $(50 + 10) \text{ cm} = 60 \text{ cm}$ mark.
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="section quiz-section">
+            <h3 style="color: #4e342e;">Interactive Quiz 🤔</h3>
+            <p>Test your knowledge with this quick quiz!</p>
+            <div class="quiz-question">
+                <p>1. The two forces in a couple are always:</p>
+                <input type="radio" name="q1" value="Equal and opposite"> Equal, opposite, and non-collinear<br>
+                <input type="radio" name="q1" value="Unequal and same direction"> Unequal and in the same direction<br>
+                <input type="radio" name="q1" value="Equal and same line"> Equal and on the same line of action<br>
+            </div>
+            <div class="quiz-question">
+                <p>2. In Neutral Equilibrium, the Center of Gravity (CG):</p>
+                <input type="radio" name="q2" value="Goes up"> Goes up when disturbed<br>
+                <input type="radio" name="q2" value="Goes down"> Goes down when disturbed<br>
+                <input type="radio" name="q2" value="Stays at the same height"> Stays at the same height<br>
+            </div>
+            <button class="btn btn-primary" onclick="submitQuiz()">Submit Quiz</button>
+            <div id="quiz-result" class="quiz-result alert alert-info"></div>
+        </section>
+
+        <section id="important" class="section">
+            <h3 style="color: #4e342e;">Important Points ⭐</h3>
+            <div class="important">
+                <ul>
+                    <li>Memorize the definition and formula for **Torque** ($\tau = F \times L$).</li>
+                    <li>Understand and apply the **Principle of Moments** for balanced systems.</li>
+                    <li>Know the **two conditions** for a body to be in complete **Equilibrium**.</li>
+                    <li>Be able to differentiate and give examples of **Stable, Unstable, and Neutral** equilibrium.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Source: Sindh Textbook Board Physics Class 9, Chapter 4. For more chapters or updates, refer to the official textbook. &copy; 2023 | <button class="btn btn-light btn-sm" onclick="window.print()">Print Page</button></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                button.textContent = 'Hide Answer';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'Show Answer';
+            }
+        }
+
+        function toggleSolution(button) {
+            const solution = button.nextElementSibling;
+            if (solution.style.display === 'none' || solution.style.display === '') {
+                solution.style.display = 'block';
+                button.textContent = 'Hide Solution';
+            } else {
+                solution.style.display = 'none';
+                button.textContent = 'Show Solution';
+            }
+        }
+
+        function submitQuiz() {
+            let score = 0;
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const totalQuestions = 2;
+
+            if (q1 && q1.value === 'Equal and opposite') score++;
+            if (q2 && q2.value === 'Stays at the same height') score++;
+
+            const resultElement = document.getElementById('quiz-result');
+            resultElement.innerHTML = `Your score: ${score} out of ${totalQuestions}.`;
+            resultElement.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

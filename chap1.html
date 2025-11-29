@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Fundamentals of Chemistry - Class 9 Sindh Textbook Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .navbar { background-color: #2E8B57 !important; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .section { margin-bottom: 40px; }
+        .mcq { background-color: #e9f7ef; padding: 15px; margin: 10px 0; border-left: 5px solid #2E8B57; border-radius: 5px; }
+        .question { font-weight: bold; }
+        .answer { margin-left: 20px; color: #555; display: none; }
+        .important { background-color: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; border-radius: 5px; }
+        .btn-toggle { margin-top: 10px; }
+        .quiz-section { background-color: #f0f8ff; padding: 20px; border-radius: 8px; }
+        .quiz-question { margin-bottom: 15px; }
+        .quiz-result { margin-top: 20px; display: none; }
+        footer { background-color: #343a40; color: white; padding: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Chemistry Class 9 - Sindh Board</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#notes">Notes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mcqs">MCQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#short-questions">Short Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#long-questions">Long Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#numericals">Numericals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#important">Important</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <header class="text-center mb-4">
+            <h1 class="text-success">Chapter 1: Fundamentals of Chemistry</h1>
+            <p class="lead">Comprehensive Notes, Questions, and Practice for Sindh Textbook Board</p>
+        </header>
+
+        <section id="notes" class="section">
+            <h3 class="text-success">Chapter Notes</h3>
+            <p>Chemistry is the branch of science that deals with the composition, structure, properties, and changes of matter. This chapter introduces the basic concepts of chemistry, including matter, elements, compounds, mixtures, and the scientific method.</p>
+            
+            <h4>What is Matter?</h4>
+            <p>Matter is anything that has mass and occupies space. It exists in three states: solid, liquid, and gas.</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Solid:</strong> Definite shape and volume (e.g., ice).</li>
+                <li class="list-group-item"><strong>Liquid:</strong> Definite volume but no definite shape (e.g., water).</li>
+                <li class="list-group-item"><strong>Gas:</strong> No definite shape or volume (e.g., air).</li>
+            </ul>
+
+            <h4>Elements, Compounds, and Mixtures</h4>
+            <p>Substances are classified into elements, compounds, and mixtures.</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Elements:</strong> Pure substances that cannot be broken down into simpler substances (e.g., hydrogen, oxygen).</li>
+                <li class="list-group-item"><strong>Compounds:</strong> Substances formed by chemical combination of two or more elements (e.g., water - H₂O).</li>
+                <li class="list-group-item"><strong>Mixtures:</strong> Combinations of substances that can be separated by physical means (e.g., salt in water).</li>
+            </ul>
+
+            <h4>Physical and Chemical Changes</h4>
+            <p>Changes in matter can be physical or chemical.</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Physical Change:</strong> No new substance is formed (e.g., melting ice).</li>
+                <li class="list-group-item"><strong>Chemical Change:</strong> New substances are formed (e.g., burning paper).</li>
+            </ul>
+
+            <h4>The Scientific Method</h4>
+            <p>The scientific method involves observation, hypothesis, experimentation, and conclusion to understand natural phenomena.</p>
+
+            <h4>Laws of Chemical Combination</h4>
+            <p>Key laws include:</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Law of Conservation of Mass:</strong> Mass is neither created nor destroyed in a chemical reaction.</li>
+                <li class="list-group-item"><strong>Law of Definite Proportions:</strong> A compound always contains the same elements in the same proportion by mass.</li>
+            </ul>
+        </section>
+
+        <section id="mcqs" class="section">
+            <h3 class="text-success">Multiple Choice Questions (MCQs)</h3>
+            <div class="mcq">
+                <p class="question">1. Which of the following is not a state of matter?</p>
+                <p>a) Solid<br>b) Liquid<br>c) Gas<br>d) Plasma</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: d) Plasma (Note: Plasma is considered a fourth state, but in basic chemistry, options a-c are standard.)</p>
+            </div>
+            <div class="mcq">
+                <p class="question">2. What is the chemical formula for water?</p>
+                <p>a) H₂<br>b) O₂<br>c) H₂O<br>d) CO₂</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) H₂O</p>
+            </div>
+            <div class="mcq">
+                <p class="question">3. Which change is physical?</p>
+                <p>a) Burning of paper<br>b) Melting of ice<br>c) Rusting of iron<br>d) Cooking of food</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) Melting of ice</p>
+            </div>
+            <div class="mcq">
+                <p class="question">4. An example of a mixture is:</p>
+                <p>a) Water<br>b) Salt<br>c) Air<br>d) Gold</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Air</p>
+            </div>
+            <div class="mcq">
+                <p class="question">5. The law that states mass is conserved in a chemical reaction is:</p>
+                <p>a) Law of Definite Proportions<br>b) Law of Conservation of Mass<br>c) Law of Multiple Proportions<br>d) Avogadro's Law</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) Law of Conservation of Mass</p>
+            </div>
+        </section>
+
+        <section id="short-questions" class="section">
+            <h3 class="text-success">Short Questions</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Define chemistry.</strong><br>Answer: Chemistry is the branch of science that studies the composition, structure, properties, and changes of matter.</li>
+                <li class="list-group-item"><strong>What is matter?</strong><br>Answer: Matter is anything that has mass and occupies space.</li>
+                <li class="list-group-item"><strong>Name the three states of matter.</strong><br>Answer: Solid, liquid, and gas.</li>
+                <li class="list-group-item"><strong>Differentiate between elements and compounds.</strong><br>Answer: Elements are pure substances that cannot be broken down, while compounds are formed by chemical combination of elements.</li>
+                <li class="list-group-item"><strong>What is a mixture?</strong><br>Answer: A mixture is a combination of substances that can be separated by physical means.</li>
+                <li class="list-group-item"><strong>Give an example of a physical change.</strong><br>Answer: Melting of ice.</li>
+                <li class="list-group-item"><strong>Give an example of a chemical change.</strong><br>Answer: Burning of paper.</li>
+                <li class="list-group-item"><strong>What is the scientific method?</strong><br>Answer: It is a systematic approach involving observation, hypothesis, experimentation, and conclusion.</li>
+                <li class="list-group-item"><strong>State the Law of Conservation of Mass.</strong><br>Answer: Mass is neither created nor destroyed in a chemical reaction.</li>
+                <li class="list-group-item"><strong>State the Law of Definite Proportions.</strong><br>Answer: A compound always contains the same elements in the same proportion by mass.</li>
+            </ol>
+        </section>
+
+        <section id="long-questions" class="section">
+            <h3 class="text-success">Long Questions</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Explain the three states of matter with examples.</strong><br>Answer: Solids have definite shape and volume (e.g., ice). Liquids have definite volume but no definite shape (e.g., water). Gases have no definite shape or volume (e.g., air).</li>
+                <li class="list-group-item"><strong>Differentiate between physical and chemical changes with examples.</strong><br>Answer: Physical changes do not form new substances (e.g., melting ice), while chemical changes do (e.g., burning paper).</li>
+                <li class="list-group-item"><strong>Describe the classification of substances into elements, compounds, and mixtures.</strong><br>Answer: Elements are pure and indivisible (e.g., oxygen). Compounds are combinations of elements (e.g., water). Mixtures are physical combinations (e.g., salt solution).</li>
+                <li class="list-group-item"><strong>Explain the scientific method with steps.</strong><br>Answer: Steps include: observation, forming a hypothesis, conducting experiments, analyzing data, and drawing conclusions.</li>
+                <li class="list-group-item"><strong>Discuss the Laws of Chemical Combination.</strong><br>Answer: The Law of Conservation of Mass states mass is conserved. The Law of Definite Proportions states compounds have fixed proportions.</li>
+            </ol>
+        </section>
+
+        <section id="numericals" class="section">
+            <h3 class="text-success">Numerical Problems</h3>
+            <p>Note: Chapter 1 may not have many numericals, but here are some related practice problems.</p>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Calculate the mass of oxygen in 18g of water (H₂O, atomic masses: H=1, O=16).</strong><br>Answer: Water is H₂O, so 2H + O = 18g. Mass of O = 16g.</li>
+                <li class="list-group-item"><strong>In a reaction, 10g of reactant produces 8g of product. What is the mass of the other product? (Law of Conservation)</strong><br>Answer: Total mass conserved, so other product is 2g.</li>
+                <li class="list-group-item"><strong>A compound has 2g hydrogen and 16g oxygen. Find the ratio.</strong><br>Answer: Ratio H:O = 2:16 or 1:8.</li>
+            </ol>
+        </section>
+
+        <section id="quiz" class="section quiz-section">
+            <h3 class="text-success">Interactive Quiz</h3>
+            <p>Test your knowledge with this quick quiz!</p>
+            <div class="quiz-question">
+                <p>1. What is the main branch of science dealing with matter?</p>
+                <input type="radio" name="q1" value="Physics"> Physics<br>
+                <input type="radio" name="q1" value="Chemistry"> Chemistry<br>
+                <input type="radio" name="q1" value="Biology"> Biology<br>
+            </div>
+            <div class="quiz-question">
+                <p>2. Which is a chemical change?</p>
+                <input type="radio" name="q2" value="Melting"> Melting<br>
+                <input type="radio" name="q2" value="Burning"> Burning<br>
+                <input type="radio" name="q2" value="Freezing"> Freezing<br>
+            </div>
+            <button class="btn btn-primary" onclick="submitQuiz()">Submit Quiz</button>
+            <div id="quiz-result" class="quiz-result alert alert-info"></div>
+        </section>
+
+        <section id="important" class="section">
+            <h3 class="text-success">Important Points</h3>
+            <div class="important">
+                <ul>
+                    <li>Remember the definitions of matter, elements, compounds, and mixtures.</li>
+                    <li>Distinguish between physical and chemical changes by whether new substances are formed.</li>
+                    <li>The scientific method is crucial for experimentation.</li>
+                    <li>Laws of Chemical Combination are foundational for stoichiometry.</li>
+                    <li>Practice MCQs and questions regularly for exams.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Source: Sindh Textbook Board Chemistry Class 9. For more chapters or updates, refer to the official textbook. &copy; 2023 | <button class="btn btn-light btn-sm" onclick="window.print()">Print Page</button></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                button.textContent = 'Hide Answer';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'Show Answer';
+            }
+        }
+
+        function submitQuiz() {
+            let score = 0;
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            if (q1 && q1.value === 'Chemistry') score++;
+            if (q2 && q2.value === 'Burning') score++;
+            const result = document.getElementById('quiz-result');
+            result.style.display = 'block';
+            result.innerHTML = `You scored ${score} out of 2!`;
+        }
+    </script>
+</body>
+</html>

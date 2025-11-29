@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Dynamics - Class 9 Sindh Textbook Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        /* Theme focused on force and causes of motion (e.g., deep red/brown accents) */
+        .navbar { background-color: #795548 !important; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .section { margin-bottom: 40px; }
+        /* Light brown background for MCQs */
+        .mcq { background-color: #efebe9; padding: 15px; margin: 10px 0; border-left: 5px solid #8d6e63; border-radius: 5px; }
+        .question { font-weight: bold; }
+        .answer { margin-left: 20px; color: #555; display: none; }
+        /* Light orange background for important notes */
+        .important { background-color: #fff3e0; padding: 15px; border-left: 5px solid #ff7043; border-radius: 5px; }
+        .btn-toggle { margin-top: 10px; }
+        /* Light gray/blue background for the quiz */
+        .quiz-section { background-color: #cfd8dc; padding: 20px; border-radius: 8px; }
+        .quiz-question { margin-bottom: 15px; }
+        .quiz-result { margin-top: 20px; display: none; }
+        footer { background-color: #3e2723; color: white; padding: 20px; text-align: center; }
+        .numerical { background-color: #f8f9fa; padding: 15px; margin: 10px 0; border: 1px solid #dee2e6; border-radius: 5px; }
+        .numerical .solution { display: none; margin-top: 10px; }
+        .physics-formula { background-color: #fbe9e7; padding: 10px; border-radius: 5px; margin-top: 10px; }
+        .table-responsive { margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Physics Class 9 - Sindh Board</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#notes">Notes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#laws">Newton's Laws</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mcqs">MCQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#short-questions">Short Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#long-questions">Long Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#numerical">Numericals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#important">Important</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <header class="text-center mb-4">
+            <h1 style="color: #795548;">Chapter 3: Dynamics 🔨</h1>
+            <p class="lead">The Study of Motion and its Causes (Forces)</p>
+        </header>
+
+        <section id="notes" class="section">
+            <h3 style="color: #795548;">Core Concepts 🛠️</h3>
+            <p>**Dynamics** is the branch of mechanics that studies the motion of objects and the **forces** that cause that motion.</p>
+
+            <h4>1. Force, Inertia, and Momentum</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">**Force ($\vec{F}$):** An agent that tends to produce or stop motion, or change the direction or shape of a body. It is a **Vector** quantity. SI Unit: **Newton (N)**.</li>
+                <li class="list-group-item">**Inertia:** The inherent property of a body to resist any change in its state of rest or uniform motion in a straight line. **Mass is the quantitative measure of Inertia.**</li>
+                <li class="list-group-item">**Momentum ($\vec{p}$):** The quantity of motion contained in a body. It is the product of mass and velocity. It is a **Vector** quantity.
+                    <div class="physics-formula">$$\vec{p} = m\vec{v}$$</div>
+                    SI Unit: $\text{kg}\cdot\text{m/s}$.
+                </li>
+            </ul>
+
+            <h4 class="mt-4">2. Force and Weight</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">**Weight ($\vec{W}$):** The gravitational force exerted by the Earth on a body. It is calculated by mass $\times$ acceleration due to gravity.
+                    <div class="physics-formula">$$\vec{W} = m\vec{g}$$</div>
+                    Weight is measured in **Newtons (N)**, while Mass is measured in **kilograms (kg)**. Weight changes with location (e.g., Moon), but mass remains constant.
+                </li>
+            </ul>
+        </section>
+
+        <section id="laws" class="section">
+            <h3 style="color: #795548;">Newton's Laws of Motion</h3>
+            
+            <h4>1. Newton's First Law of Motion (Law of Inertia)</h4>
+            <p>A body continues its state of **rest** or **uniform motion** in a straight line unless acted upon by an external **net force**.</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">**Significance:** Defines **Inertia** and establishes the concept of an inertial reference frame.</li>
+            </ul>
+
+            <h4>2. Newton's Second Law of Motion</h4>
+            <p>The rate of change of a body's **momentum** is directly proportional to the **net force** applied and takes place in the direction of the net force.</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">**Formula Derivation:** For a constant mass $m$, this simplifies to:
+                    <div class="physics-formula">$$\vec{F} = m\vec{a}$$</div>
+                    Where $\vec{F}$ is the net force, $m$ is mass, and $\vec{a}$ is acceleration.
+                </li>
+                <li class="list-group-item">**Definition of Newton:** **One Newton (1 N)** is the force required to produce an acceleration of $1 \text{ m/s}^2$ in a body of mass $1 \text{ kg}$.</li>
+            </ul>
+
+            <h4>3. Newton's Third Law of Motion</h4>
+            <p>To every action, there is always an **equal and opposite reaction**.</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">**Key Points:** The action and reaction forces always act on **two different bodies**.</li>
+                <li class="list-group-item">**Examples:** A rocket pushing gas downwards (action) and the gas pushing the rocket upwards (reaction). Walking (foot pushes ground, ground pushes foot forward). 
+
+[Image of action and reaction forces in Newton's Third Law]
+</li>
+            </ul>
+        </section>
+        
+        <section id="mcqs" class="section">
+            <h3 style="color: #795548;">Multiple Choice Questions (MCQs) ❓</h3>
+            <div class="mcq">
+                <p class="question">1. The quantitative measure of inertia is:</p>
+                <p>a) Force<br>b) Velocity<br>c) Mass<br>d) Momentum</p>
+                <button class="btn btn-sm btn-secondary btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Mass</p>
+            </div>
+            <div class="mcq">
+                <p class="question">2. The SI unit of Momentum is:</p>
+                <p>a) $\text{Newton}$<br>b) $\text{Joule}$<br>c) $\text{kg}\cdot\text{m/s}$<br>d) $\text{m/s}^2$</p>
+                <button class="btn btn-sm btn-secondary btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) $\text{kg}\cdot\text{m/s}$</p>
+            </div>
+            <div class="mcq">
+                <p class="question">3. Newton's Third Law states that action and reaction forces act on:</p>
+                <p>a) The same body<br>b) The same direction<br>c) Two different bodies<br>d) The center of mass</p>
+                <button class="btn btn-sm btn-secondary btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Two different bodies</p>
+            </div>
+            <div class="mcq">
+                <p class="question">4. Which of these is a vector quantity?</p>
+                <p>a) Mass<br>b) Weight<br>c) Inertia<br>d) Time</p>
+                <button class="btn btn-sm btn-secondary btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) Weight (since it is a force)</p>
+            </div>
+        </section>
+
+        <section id="short-questions" class="section">
+            <h3 style="color: #795548;">Short Questions 📝</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item">**Define Force and mention its SI unit.**<br>Answer: Force is an external agent that changes or tends to change the state of rest or uniform motion of a body. Its SI unit is the **Newton (N)**.</li>
+                <li class="list-group-item">**What is Inertia?**<br>Answer: Inertia is the natural tendency of a body to resist a change in its state of motion. A heavier object has greater inertia.</li>
+                <li class="list-group-item">**Differentiate between Mass and Weight.**<br>Answer: **Mass** is the amount of matter in a body (constant everywhere), measured in $\text{kg}$. **Weight** is the force of gravity acting on the mass ($\vec{W} = m\vec{g}$), measured in $\text{N}$ (varies with $g$).</li>
+                <li class="list-group-item">**State the formula for momentum and define its terms.**<br>Answer: The formula is $\vec{p} = m\vec{v}$, where $\vec{p}$ is momentum, $m$ is mass, and $\vec{v}$ is velocity.</li>
+                <li class="list-group-item">**What is the concept of balanced forces?**<br>Answer: Balanced forces are two or more forces acting on a body whose **vector sum (net force) is zero**. They do not cause acceleration, so the body remains at rest or in uniform velocity.</li>
+            </ol>
+        </section>
+
+        <section id="long-questions" class="section">
+            <h3 style="color: #795548;">Long Questions 📚</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item">**State and explain Newton's First Law of Motion, providing a relevant example.**<br>Answer: The First Law states that an object will remain at rest or continue moving at a constant velocity unless an external net force acts upon it. It is also known as the Law of Inertia. **Explanation:** It shows that objects naturally resist changes in motion. **Example:** When a bus suddenly brakes, the passengers continue to move forward due to their inertia, needing a force (the seatbelt or the seat in front) to change their state of motion.</li>
+                <li class="list-group-item">**Derive the relationship $\vec{F} = m\vec{a}$ from Newton's Second Law of Motion.**<br>Answer: Newton's Second Law states that $\vec{F} \propto \frac{\Delta \vec{p}}{t}$. Since momentum $\vec{p} = m\vec{v}$, the change in momentum ($\Delta \vec{p}$) is $m(\vec{v}_f - \vec{v}_i)$.
+                    $$\vec{F} \propto \frac{m(\vec{v}_f - \vec{v}_i)}{t}$$
+                    Since acceleration $\vec{a} = \frac{\vec{v}_f - \vec{v}_i}{t}$, we substitute $\vec{a}$:
+                    $$\vec{F} \propto m\vec{a}$$
+                    By defining the unit of force (Newton) such that the constant of proportionality is 1, we get:
+                    $$\vec{F} = m\vec{a}$$
+                </li>
+                <li class="list-group-item">**Explain Newton's Third Law of Motion with two daily life examples.**<br>Answer: The Third Law states that for every action force, there is an equal and opposite reaction force. **Crucially, these forces do not cancel each other out because they act on different bodies.** **Example 1 (Swimming):** A swimmer pushes the water backward (action), and the water exerts an equal and opposite force, pushing the swimmer forward (reaction). **Example 2 (Recoil of a Gun):** When a bullet is fired, the gun exerts a forward force on the bullet (action), and the bullet exerts an equal and opposite backward force on the gun (recoil/reaction).</li>
+            </ol>
+        </section>
+
+        <section id="numerical" class="section">
+            <h3 style="color: #795548;">Numerical Problems 🔢</h3>
+            <p>Practice applying the formula $\vec{F} = m\vec{a}$.</p>
+            <div class="numerical">
+                <p><strong>1. Calculate the acceleration produced by a force of $50 \text{ N}$ in a body of mass $10 \text{ kg}$.</strong></p>
+                <button class="btn btn-sm btn-info" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Given: $F = 50 \text{ N}$, $m = 10 \text{ kg}$.
+                    Using $F = ma \Rightarrow a = \frac{F}{m}$:
+                    $$a = \frac{50 \text{ N}}{10 \text{ kg}} = 5 \text{ m/s}^2$$
+                </div>
+            </div>
+            <div class="numerical">
+                <p><strong>2. Find the momentum of a truck having a mass of $2000 \text{ kg}$ moving with a velocity of $15 \text{ m/s}$.</strong></p>
+                <button class="btn btn-sm btn-info" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Given: $m = 2000 \text{ kg}$, $v = 15 \text{ m/s}$.
+                    Using $\vec{p} = m\vec{v}$:
+                    $$\vec{p} = (2000 \text{ kg})(15 \text{ m/s}) = 30,000 \text{ kg}\cdot\text{m/s}$$
+                </div>
+            </div>
+            <div class="numerical">
+                <p><strong>3. Calculate the weight ($\vec{W}$) of a body on Earth if its mass ($m$) is $5 \text{ kg}$ (assume $g = 10 \text{ m/s}^2$).</strong></p>
+                <button class="btn btn-sm btn-info" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Given: $m = 5 \text{ kg}$, $g = 10 \text{ m/s}^2$.
+                    Using $\vec{W} = m\vec{g}$:
+                    $$\vec{W} = (5 \text{ kg})(10 \text{ m/s}^2) = 50 \text{ N}$$
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz" class="section quiz-section">
+            <h3 style="color: #795548;">Interactive Quiz 🤔</h3>
+            <p>Test your knowledge with this quick quiz!</p>
+            <div class="quiz-question">
+                <p>1. The force required to cause $1 \text{ m/s}^2$ acceleration in a $1 \text{ kg}$ mass is:</p>
+                <input type="radio" name="q1" value="1 Joule"> $1 \text{ Joule}$<br>
+                <input type="radio" name="q1" value="1 Newton"> $1 \text{ Newton}$<br>
+                <input type="radio" name="q1" value="1 Watt"> $1 \text{ Watt}$<br>
+            </div>
+            <div class="quiz-question">
+                <p>2. If no net external force acts on a body, it:</p>
+                <input type="radio" name="q2" value="Always comes to rest"> Always comes to rest<br>
+                <input type="radio" name="q2" value="Maintains its state of motion"> Maintains its state of motion<br>
+                <input type="radio" name="q2" value="Changes direction"> Changes direction<br>
+            </div>
+            <button class="btn btn-primary" onclick="submitQuiz()">Submit Quiz</button>
+            <div id="quiz-result" class="quiz-result alert alert-info"></div>
+        </section>
+
+        <section id="important" class="section">
+            <h3 style="color: #795548;">Important Points ⭐</h3>
+            <div class="important">
+                <ul>
+                    <li>Understand the relationship: **Mass $\rightarrow$ Inertia $\rightarrow$ Force $\rightarrow$ Acceleration**.</li>
+                    <li>Memorize the formal statements of **all three Newton's Laws** and their applications.</li>
+                    <li>Differentiate clearly between **Mass** ($\text{kg}$) and **Weight** ($\text{N}$).</li>
+                    <li>Be able to apply the formulas $\vec{F} = m\vec{a}$ and $\vec{p} = m\vec{v}$ in numerical problems.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Source: Sindh Textbook Board Physics Class 9, Chapter 3. For more chapters or updates, refer to the official textbook. &copy; 2023 | <button class="btn btn-light btn-sm" onclick="window.print()">Print Page</button></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                button.textContent = 'Hide Answer';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'Show Answer';
+            }
+        }
+
+        function toggleSolution(button) {
+            const solution = button.nextElementSibling;
+            if (solution.style.display === 'none' || solution.style.display === '') {
+                solution.style.display = 'block';
+                button.textContent = 'Hide Solution';
+            } else {
+                solution.style.display = 'none';
+                button.textContent = 'Show Solution';
+            }
+        }
+
+        function submitQuiz() {
+            let score = 0;
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            const totalQuestions = 2;
+
+            if (q1 && q1.value === '1 Newton') score++;
+            if (q2 && q2.value === 'Maintains its state of motion') score++;
+
+            const resultElement = document.getElementById('quiz-result');
+            resultElement.innerHTML = `Your score: ${score} out of ${totalQuestions}.`;
+            resultElement.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

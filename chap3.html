@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Periodic Table - Class 9 Sindh Textbook Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .navbar { background-color: #2E8B57 !important; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .section { margin-bottom: 40px; }
+        .mcq { background-color: #e9f7ef; padding: 15px; margin: 10px 0; border-left: 5px solid #2E8B57; border-radius: 5px; }
+        .question { font-weight: bold; }
+        .answer { margin-left: 20px; color: #555; display: none; }
+        .important { background-color: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; border-radius: 5px; }
+        .btn-toggle { margin-top: 10px; }
+        .quiz-section { background-color: #f0f8ff; padding: 20px; border-radius: 8px; }
+        .quiz-question { margin-bottom: 15px; }
+        .quiz-result { margin-top: 20px; display: none; }
+        footer { background-color: #343a40; color: white; padding: 20px; text-align: center; }
+        .numerical { background-color: #f8f9fa; padding: 15px; margin: 10px 0; border: 1px solid #dee2e6; border-radius: 5px; }
+        .numerical .solution { display: none; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Chemistry Class 9 - Sindh Board</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#notes">Notes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mcqs">MCQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#short-questions">Short Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#long-questions">Long Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#numericals">Numericals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#important">Important</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <header class="text-center mb-4">
+            <h1 class="text-success">Chapter 3: Periodic Table</h1>
+            <p class="lead">Comprehensive Notes, Questions, and Practice for Sindh Textbook Board</p>
+        </header>
+
+        <section id="notes" class="section">
+            <h3 class="text-success">Chapter Notes</h3>
+            <p>This chapter discusses the development and structure of the Periodic Table, including Mendeleev's table, modern periodic table, groups, periods, and properties.</p>
+            
+            <h4>Mendeleev's Periodic Table</h4>
+            <p>Dmitri Mendeleev arranged elements by atomic mass, leaving gaps for undiscovered elements. Properties repeat periodically.</p>
+
+            <h4>Modern Periodic Table</h4>
+            <p>Arranged by atomic number. Elements with similar properties in the same group (vertical) and period (horizontal).</p>
+
+            <h4>Groups and Periods</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Groups:</strong> Vertical columns (1-18), elements have similar chemical properties.</li>
+                <li class="list-group-item"><strong>Periods:</strong> Horizontal rows (1-7), show gradual change in properties.</li>
+            </ul>
+
+            <h4>Metals, Non-Metals, and Metalloids</h4>
+            <p>Metals: Left side, conduct electricity. Non-metals: Right side, poor conductors. Metalloids: Between, e.g., Silicon.</p>
+
+            <h4>Valency and Atomic Size</h4>
+            <p>Valency: Combining capacity. Atomic size decreases across a period, increases down a group.</p>
+        </section>
+
+        <section id="mcqs" class="section">
+            <h3 class="text-success">Multiple Choice Questions (MCQs)</h3>
+            <div class="mcq">
+                <p class="question">1. Who proposed the modern periodic table?</p>
+                <p>a) Mendeleev<br>b) Moseley<br>c) Bohr<br>d) Rutherford</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) Moseley</p>
+            </div>
+            <div class="mcq">
+                <p class="question">2. Elements in the same group have:</p>
+                <p>a) Same atomic mass<br>b) Same number of valence electrons<br>c) Same atomic number<br>d) Same mass number</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) Same number of valence electrons</p>
+            </div>
+            <div class="mcq">
+                <p class="question">3. The number of periods in the periodic table is:</p>
+                <p>a) 7<br>b) 8<br>c) 18<br>d) 9</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: a) 7</p>
+            </div>
+            <div class="mcq">
+                <p class="question">4. Which is a metalloid?</p>
+                <p>a) Sodium<br>b) Silicon<br>c) Sulfur<br>d) Chlorine</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) Silicon</p>
+            </div>
+            <div class="mcq">
+                <p class="question">5. Atomic size increases down a:</p>
+                <p>a) Period<br>b) Group<br>c) Neither<br>d) Both</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) Group</p>
+            </div>
+        </section>
+
+        <section id="short-questions" class="section">
+            <h3 class="text-success">Short Questions</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Define periodic table.</strong><br>Answer: A table that arranges elements in order of increasing atomic number with similar properties in columns.</li>
+                <li class="list-group-item"><strong>Who is Mendeleev?</strong><br>Answer: Russian chemist who arranged elements by atomic mass and predicted new elements.</li>
+                <li class="list-group-item"><strong>What is a group?</strong><br>Answer: A vertical column in the periodic table with elements having similar properties.</li>
+                <li class="list-group-item"><strong>What is a period?</strong><br>Answer: A horizontal row in the periodic table showing gradual change in properties.</li>
+                <li class="list-group-item"><strong>Name the groups of the periodic table.</strong><br>Answer: 18 groups, named as IA to VIIIA, and transition metals.</li>
+                <li class="list-group-item"><strong>What are metals?</strong><br>Answer: Elements that are good conductors of heat and electricity, malleable, and ductile.</li>
+                <li class="list-group-item"><strong>What are non-metals?</strong><br>Answer: Elements that are poor conductors, brittle, and form acidic oxides.</li>
+                <li class="list-group-item"><strong>Define valency.</strong><br>Answer: The combining capacity of an element, determined by valence electrons.</li>
+                <li class="list-group-item"><strong>What is atomic size?</strong><br>Answer: The distance from the nucleus to the outermost electron shell.</li>
+                <li class="list-group-item"><strong>Give an example of a metalloid.</strong><br>Answer: Silicon or Germanium.</li>
+            </ol>
+        </section>
+
+        <section id="long-questions" class="section">
+            <h3 class="text-success">Long Questions</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Explain Mendeleev's periodic law.</strong><br>Answer: Properties of elements are periodic functions of their atomic masses.</li>
+                <li class="list-group-item"><strong>Describe the modern periodic table.</strong><br>Answer: Arranged by atomic number, 18 groups, 7 periods, metals on left, non-metals on right.</li>
+                <li class="list-group-item"><strong>Differentiate between metals and non-metals.</strong><br>Answer: Metals conduct electricity, non-metals do not; metals are malleable, non-metals are brittle.</li>
+                <li class="list-group-item"><strong>Discuss the trends in atomic size in groups and periods.</strong><br>Answer: Increases down a group, decreases across a period.</li>
+                <li class="list-group-item"><strong>What are the merits of the periodic table?</strong><br>Answer: Predicts properties, classifies elements, helps in understanding chemical behavior.</li>
+            </ol>
+        </section>
+
+        <section id="numericals" class="section">
+            <h3 class="text-success">Numerical Problems</h3>
+            <p>Practice these numerical problems based on Chapter 3 concepts. Click "Show Solution" to reveal the answer.</p>
+            <div class="numerical">
+                <p><strong>1. Find the group and period of element with atomic number 11.</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: Sodium, Group 1, Period 3.</div>
+            </div>
+            <div class="numerical">
+                <p><strong>2. Identify the element in Group 17, Period 3.</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: Chlorine (atomic number 17).</div>
+            </div>
+            <div class="numerical">
+                <p><strong>3. How many valence electrons does an element in Group 14 have?</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: 4 valence electrons.</div>
+            </div>
+            <div class="numerical">
+                <p><strong>4. Find the atomic number of the element in Period 2, Group 16.</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: Sulfur, atomic number 16.</div>
+            </div>
+            <div class="numerical">
+                <p><strong>5. Calculate the valency of magnesium (Group 2).</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: Valency = 2.</div>
+            </div>
+            <div class="numerical">
+                <p><strong>6. How many elements are in Period 4?</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: 18 elements.</div>
+            </div>
+            <div class="numerical">
+                <p><strong>7. Identify if Potassium is a metal or non-metal.</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: Metal (Group 1).</div>
+            </div>
+            <div class="numerical">
+                <p><strong>8. Find the group of Carbon.</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: Group 14.</div>
+            </div>
+            <div class="numerical">
+                <p><strong>9. What is the period of Neon?</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: Period 2.</div>
+            </div>
+            <div class="numerical">
+                <p><strong>10. Calculate valence electrons for Phosphorus (atomic number 15).</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: 5 valence electrons (Group 15).</div>
+            </div>
+        </section>
+
+        <section id="quiz" class="section quiz-section">
+            <h3 class="text-success">Interactive Quiz</h3>
+            <p>Test your knowledge with this quick quiz!</p>
+            <div class="quiz-question">
+                <p>1. The periodic table is arranged by:</p>
+                <input type="radio" name="q1" value="Atomic mass"> Atomic mass<br>
+                <input type="radio" name="q1" value="Atomic number"> Atomic number<br>
+                <input type="radio" name="q1" value="Density"> Density<br>
+            </div>
+            <div class="quiz-question">
+                <p>2. Which group contains noble gases?</p>
+                <input type="radio" name="q2" value="Group 1"> Group 1<br>
+                <input type="radio" name="q2" value="Group 18"> Group 18<br>
+                <input type="radio" name="q2" value="Group 17"> Group 17<br>
+            </div>
+            <button class="btn btn-primary" onclick="submitQuiz()">Submit Quiz</button>
+            <div id="quiz-result" class="quiz-result alert alert-info"></div>
+        </section>
+
+        <section id="important" class="section">
+            <h3 class="text-success">Important Points</h3>
+            <div class="important">
+                <ul>
+                    <li>Memorize the structure: groups (vertical), periods (horizontal).</li>
+                    <li>Understand properties of metals, non-metals, and metalloids.</li>
+                    <li>Learn trends: atomic size, valency across periods and groups.</li>
+                    <li>Practice locating elements by atomic number, group, and period.</li>
+                    <li>Mendeleev's predictions and Moseley's contribution are key.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Source: Sindh Textbook Board Chemistry Class 9. For more chapters or updates, refer to the official textbook. &copy; 2023 | <button class="btn btn-light btn-sm" onclick="window.print()">Print Page</button></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                button.textContent = 'Hide Answer';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'Show Answer';
+            }
+        }
+
+        function toggleSolution(button) {
+            const solution = button.nextElementSibling;
+            if (solution.style.display === 'none' || solution.style.display === '') {
+                solution.style.display = 'block';
+                button.textContent = 'Hide Solution';
+            } else {
+                solution.style.display = 'none';
+                button.textContent = 'Show Solution';
+            }
+        }
+
+        function submitQuiz() {
+            let score = 0;
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            if (q1 && q1.value === 'Atomic number') score++;
+            if (q2 && q2.value === 'Group 18') score++;
+            const result = document.getElementById('quiz-result');
+            result.style.display = 'block';
+            result.innerHTML = `You scored ${score} out of 2!`;
+        }
+    </script>
+</body>
+</html>
+s

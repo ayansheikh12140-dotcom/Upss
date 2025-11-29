@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Fundamentals of Operating System - Class 9 Sindh Board</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .navbar { background-color: #2E8B57 !important; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .section { margin-bottom: 40px; }
+        .mcq { background-color: #e9f7ef; padding: 15px; margin: 10px 0; border-left: 5px solid #2E8B57; border-radius: 5px; }
+        .question { font-weight: bold; }
+        .answer { margin-left: 20px; color: #555; display: none; }
+        .important { background-color: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; border-radius: 5px; }
+        .btn-toggle { margin-top: 10px; }
+        footer { background-color: #343a40; color: white; padding: 20px; text-align: center; }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Class 9 Computer - Sindh Board</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#notes">Notes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#mcqs">MCQs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#short-questions">Short Qs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#long-questions">Long Qs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#important">Important</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-4">
+
+<header class="text-center mb-4">
+    <h1 class="text-success">Chapter 2: Fundamentals of Operating System</h1>
+    <p class="lead">Complete Notes, MCQs, Questions & Important Points</p>
+</header>
+
+<!-- NOTES -->
+<section id="notes" class="section">
+    <h3 class="text-success">Chapter Notes</h3>
+
+    <h4>What is an Operating System?</h4>
+    <p>
+        An Operating System (OS) is system software that manages computer hardware, software resources,
+        and provides services to users and programs.
+    </p>
+
+    <h4>Functions of an Operating System</h4>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>1. Memory Management:</strong> Manages RAM and allocates memory to programs.</li>
+        <li class="list-group-item"><strong>2. Process Management:</strong> Controls running programs and multitasking.</li>
+        <li class="list-group-item"><strong>3. File Management:</strong> Controls files, folders, storage devices.</li>
+        <li class="list-group-item"><strong>4. Device Management:</strong> Manages input/output devices.</li>
+        <li class="list-group-item"><strong>5. Security:</strong> Protects data with passwords and permissions.</li>
+        <li class="list-group-item"><strong>6. User Interface:</strong> Provides GUI or command interface.</li>
+    </ul>
+
+    <h4>Types of Operating Systems</h4>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Single User OS:</strong> Used by one person at a time (e.g., Windows 10).</li>
+        <li class="list-group-item"><strong>Multi-User OS:</strong> Many users access the system (e.g., Linux server).</li>
+        <li class="list-group-item"><strong>Real-Time OS:</strong> Used in critical systems (e.g., Airplane control).</li>
+        <li class="list-group-item"><strong>Batch Processing OS:</strong> Processes jobs in batches.</li>
+        <li class="list-group-item"><strong>Distributed OS:</strong> Controls multiple connected computers.</li>
+    </ul>
+
+    <h4>Examples of Operating Systems</h4>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Microsoft Windows</li>
+        <li class="list-group-item">Linux</li>
+        <li class="list-group-item">Android</li>
+        <li class="list-group-item">MacOS</li>
+        <li class="list-group-item">Unix</li>
+    </ul>
+</section>
+
+<!-- MCQs -->
+<section id="mcqs" class="section">
+    <h3 class="text-success">MCQs</h3>
+
+    <div class="mcq">
+        <p class="question">1. Operating System is a:</p>
+        <p>a) Hardware<br>b) System Software<br>c) Application Software<br>d) None</p>
+        <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Answer: b) System Software</p>
+    </div>
+
+    <div class="mcq">
+        <p class="question">2. Which OS is open-source?</p>
+        <p>a) Windows<br>b) Linux<br>c) MacOS<br>d) Android</p>
+        <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Answer: b) Linux</p>
+    </div>
+
+    <div class="mcq">
+        <p class="question">3. GUI stands for:</p>
+        <p>a) General User Interface<br>b) Graphical User Interface<br>c) Graph Unit Interface<br>d) Global User Interaction</p>
+        <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Answer: b) Graphical User Interface</p>
+    </div>
+
+    <div class="mcq">
+        <p class="question">4. The core part of OS is called:</p>
+        <p>a) Shell<br>b) Kernel<br>c) Interface<br>d) Hardware</p>
+        <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Answer: b) Kernel</p>
+    </div>
+
+    <div class="mcq">
+        <p class="question">5. OS manages:</p>
+        <p>a) Files<br>b) Memory<br>c) Devices<br>d) All of these</p>
+        <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Answer: d) All of these</p>
+    </div>
+</section>
+
+<!-- SHORT QUESTIONS -->
+<section id="short-questions" class="section">
+    <h3 class="text-success">Short Questions</h3>
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item"><strong>What is an Operating System?</strong><br>Answer: System software that manages hardware and software resources.</li>
+        <li class="list-group-item"><strong>What is a Kernel?</strong><br>Answer: The core part of the OS that controls everything.</li>
+        <li class="list-group-item"><strong>What is GUI?</strong><br>Answer: Graphical User Interface.</li>
+        <li class="list-group-item"><strong>Define multitasking.</strong><br>Answer: Ability of OS to run multiple programs at the same time.</li>
+        <li class="list-group-item"><strong>Give two examples of OS.</strong><br>Answer: Windows, Linux.</li>
+    </ol>
+</section>
+
+<!-- LONG QUESTIONS -->
+<section id="long-questions" class="section">
+    <h3 class="text-success">Long Questions</h3>
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item"><strong>Explain the functions of an Operating System.</strong><br>
+            Answer: OS performs memory management, process management, file management, device control, security, and provides user interface.</li>
+
+        <li class="list-group-item"><strong>Describe the types of Operating Systems.</strong><br>
+            Answer: Single-user, multi-user, batch, real-time, and distributed OS.</li>
+
+        <li class="list-group-item"><strong>Write a note on GUI and CLI.</strong><br>
+            Answer: GUI uses icons and windows; CLI uses text commands.</li>
+
+        <li class="list-group-item"><strong>Explain why OS is important for a computer.</strong><br>
+            Answer: Without OS, a computer cannot run programs, manage hardware, or interact with users.</li>
+    </ol>
+</section>
+
+<!-- IMPORTANT -->
+<section id="important" class="section">
+    <h3 class="text-success">Important Points</h3>
+    <div class="important">
+        <ul>
+            <li>OS is system software.</li>
+            <li>Two main interfaces: GUI and CLI.</li>
+            <li>Main functions: memory, files, devices, processes, security.</li>
+            <li>Examples: Windows, Linux, Android, MacOS.</li>
+        </ul>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <p>Source: Sindh Textbook Board, Class 9 Computer Science. © 2025</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function toggleAnswer(button) {
+    const answer = button.nextElementSibling;
+    if (answer.style.display === 'none' || answer.style.display === '') {
+        answer.style.display = 'block';
+        button.textContent = 'Hide Answer';
+    } else {
+        answer.style.display = 'none';
+        button.textContent = 'Show Answer';
+    }
+}
+</script>
+
+</body>
+</html>

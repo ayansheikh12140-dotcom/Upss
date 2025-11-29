@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Chemical Bonding - Class 9 Sindh Textbook Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .navbar { background-color: #2E8B57 !important; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .section { margin-bottom: 40px; }
+        .mcq { background-color: #e9f7ef; padding: 15px; margin: 10px 0; border-left: 5px solid #2E8B57; border-radius: 5px; }
+        .question { font-weight: bold; }
+        .answer { margin-left: 20px; color: #555; display: none; }
+        .important { background-color: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; border-radius: 5px; }
+        .btn-toggle { margin-top: 10px; }
+        .quiz-section { background-color: #f0f8ff; padding: 20px; border-radius: 8px; }
+        .quiz-question { margin-bottom: 15px; }
+        .quiz-result { margin-top: 20px; display: none; }
+        footer { background-color: #343a40; color: white; padding: 20px; text-align: center; }
+        .numerical { background-color: #f8f9fa; padding: 15px; margin: 10px 0; border: 1px solid #dee2e6; border-radius: 5px; }
+        .numerical .solution { display: none; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Chemistry Class 9 - Sindh Board</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#notes">Notes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mcqs">MCQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#short-questions">Short Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#long-questions">Long Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#numericals">Numericals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#important">Important</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <header class="text-center mb-4">
+            <h1 class="text-success">Chapter 4: Chemical Bonding</h1>
+            <p class="lead">Comprehensive Notes, Questions, and Practice for Sindh Textbook Board</p>
+        </header>
+
+        <section id="notes" class="section">
+            <h3 class="text-success">Chapter Notes</h3>
+            <p>This chapter discusses how atoms combine to form molecules through chemical bonds, including ionic and covalent bonds.</p>
+            
+            <h4>Types of Chemical Bonds</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Ionic Bond:</strong> Transfer of electrons from metal to non-metal, forming ions (e.g., NaCl).</li>
+                <li class="list-group-item"><strong>Covalent Bond:</strong> Sharing of electrons between non-metals (e.g., H₂, CO₂).</li>
+            </ul>
+
+            <h4>Properties of Ionic Compounds</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">High melting/boiling points</li>
+                <li class="list-group-item">Conduct electricity in molten state</li>
+                <li class="list-group-item">Soluble in water</li>
+            </ul>
+
+            <h4>Properties of Covalent Compounds</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Low melting/boiling points</li>
+                <li class="list-group-item">Do not conduct electricity</li>
+                <li class="list-group-item">Insoluble in water</li>
+            </ul>
+
+            <h4>Lewis Dot Structures</h4>
+            <p>Representation of valence electrons to show bonding.</p>
+        </section>
+
+        <section id="mcqs" class="section">
+            <h3 class="text-success">Multiple Choice Questions (MCQs)</h3>
+            <div class="mcq">
+                <p class="question">1. Which bond involves sharing of electrons?</p>
+                <p>a) Ionic<br>b) Covalent<br>c) Metallic<br>d) Hydrogen</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) Covalent</p>
+            </div>
+            <div class="mcq">
+                <p class="question">2. Ionic bonds form between:</p>
+                <p>a) Two metals<br>b) Two non-metals<br>c) Metal and non-metal<br>d) Gases</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) Metal and non-metal</p>
+            </div>
+            <div class="mcq">
+                <p class="question">3. Which compound has covalent bonds?</p>
+                <p>a) NaCl<br>b) MgO<br>c) H₂O<br>d) CaCl₂</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: c) H₂O</p>
+            </div>
+            <div class="mcq">
+                <p class="question">4. Ionic compounds conduct electricity in:</p>
+                <p>a) Solid state<br>b) Molten state<br>c) Gaseous state<br>d) Never</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) Molten state</p>
+            </div>
+            <div class="mcq">
+                <p class="question">5. Lewis dot structure shows:</p>
+                <p>a) Atomic mass<br>b) Valence electrons<br>c) Protons<br>d) Neutrons</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">Answer: b) Valence electrons</p>
+            </div>
+        </section>
+
+        <section id="short-questions" class="section">
+            <h3 class="text-success">Short Questions</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Define chemical bonding.</strong><br>Answer: The force that holds atoms together in a molecule.</li>
+                <li class="list-group-item"><strong>What is an ionic bond?</strong><br>Answer: Bond formed by transfer of electrons.</li>
+                <li class="list-group-item"><strong>What is a covalent bond?</strong><br>Answer: Bond formed by sharing of electrons.</li>
+                <li class="list-group-item"><strong>Give an example of ionic compound.</strong><br>Answer: Sodium chloride (NaCl).</li>
+                <li class="list-group-item"><strong>Give an example of covalent compound.</strong><br>Answer: Water (H₂O).</li>
+                <li class="list-group-item"><strong>Why do ionic compounds have high melting points?</strong><br>Answer: Strong electrostatic forces between ions.</li>
+                <li class="list-group-item"><strong>Do covalent compounds conduct electricity?</strong><br>Answer: No, they are insulators.</li>
+                <li class="list-group-item"><strong>What is a Lewis dot structure?</strong><br>Answer: Diagram showing valence electrons as dots.</li>
+                <li class="list-group-item"><strong>Differentiate between ionic and covalent bonds.</strong><br>Answer: Ionic: transfer; Covalent: sharing.</li>
+                <li class="list-group-item"><strong>What are valence electrons?</strong><br>Answer: Electrons in the outermost shell.</li>
+            </ol>
+        </section>
+
+        <section id="long-questions" class="section">
+            <h3 class="text-success">Long Questions</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Explain the formation of ionic bond with example.</strong><br>Answer: Metal loses electrons to form cation, non-metal gains to form anion, e.g., Na + Cl → NaCl.</li>
+                <li class="list-group-item"><strong>Describe covalent bonding with example.</strong><br>Answer: Non-metals share electrons, e.g., H-H in H₂.</li>
+                <li class="list-group-item"><strong>Compare properties of ionic and covalent compounds.</strong><br>Answer: Ionic: high MP, conduct in molten, soluble; Covalent: low MP, insulators, insoluble.</li>
+                <li class="list-group-item"><strong>What is octet rule? Explain with example.</strong><br>Answer: Atoms tend to have 8 electrons in valence shell, e.g., NaCl formation.</li>
+                <li class="list-group-item"><strong>Draw Lewis dot structures for H₂ and HCl.</strong><br>Answer: H:H for H₂; H:Cl for HCl.</li>
+            </ol>
+        </section>
+
+        <section id="numericals" class="section">
+            <h3 class="text-success">Numerical Problems</h3>
+            <p>Practice these numerical problems based on Chapter 4 concepts. Click "Show Solution" to reveal the answer.</p>
+            <div class="numerical">
+                <p><strong>1. How many valence electrons does sodium have?</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: Sodium (Na) has 1 valence electron.</div>
+            </div>
+            <div class="numerical">
+                <p><strong>2. Determine the type of bond in MgO.</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: Ionic bond (metal and non-metal).</div>
+            </div>
+            <div class="numerical">
+                <p><strong>3. How many electrons are shared in a single covalent bond?</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: 2 electrons (one pair).</div>
+            </div>
+            <div class="numerical">
+                <p><strong>4. Write the Lewis dot structure for chlorine (Cl₂).</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: :Cl:Cl: (each Cl has 7 electrons, sharing one pair).</div>
+            </div>
+            <div class="numerical">
+                <p><strong>5. Calculate the number of bonds in CO₂.</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: 2 double bonds (C=O).</div>
+            </div>
+            <div class="numerical">
+                <p><strong>6. What is the formula for magnesium chloride?</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: MgCl₂ (ionic).</div>
+            </div>
+            <div class="numerical">
+                <p><strong>7. How many valence electrons does carbon have?</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: 4 valence electrons.</div>
+            </div>
+            <div class="numerical">
+                <p><strong>8. Identify the bond type in NH₃.</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: Covalent bonds.</div>
+            </div>
+            <div class="numerical">
+                <p><strong>9. Draw Lewis structure for O₂.</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: :O::O: (double bond).</div>
+            </div>
+            <div class="numerical">
+                <p><strong>10. What is the charge on sodium ion in NaCl?</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">Solution: +1.</div>
+            </div>
+        </section>
+
+        <section id="quiz" class="section quiz-section">
+            <h3 class="text-success">Interactive Quiz</h3>
+            <p>Test your knowledge with this quick quiz!</p>
+            <div class="quiz-question">
+                <p>1. Which element forms ionic bonds?</p>
+                <input type="radio" name="q1" value="Sodium"> Sodium<br>
+                <input type="radio" name="q1" value="Hydrogen"> Hydrogen<br>
+                <input type="radio" name="q1" value="Carbon"> Carbon<br>
+            </div>
+            <div class="quiz-question">
+                <p>2. Covalent bonds involve:</p>
+                <input type="radio" name="q2" value="Transfer"> Transfer of electrons<br>
+                <input type="radio" name="q2" value="Sharing"> Sharing of electrons<br>
+                <input type="radio" name="q2" value="Loss"> Loss of electrons<br>
+            </div>
+            <button class="btn btn-primary" onclick="submitQuiz()">Submit Quiz</button>
+            <div id="quiz-result" class="quiz-result alert alert-info"></div>
+        </section>
+
+        <section id="important" class="section">
+            <h3 class="text-success">Important Points</h3>
+            <div class="important">
+                <ul>
+                    <li>Understand the difference between ionic and covalent bonds.</li>
+                    <li>Learn to draw Lewis dot structures for simple molecules.</li>
+                    <li>Memorize properties of ionic and covalent compounds.</li>
+                    <li>Apply octet rule to predict bonding.</li>
+                    <li>Practice identifying bond types in compounds.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Source: Sindh Textbook Board Chemistry Class 9. For more chapters or updates, refer to the official textbook. &copy; 2023 | <button class="btn btn-light btn-sm" onclick="window.print()">Print Page</button></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                button.textContent = 'Hide Answer';
+            } else {
+                answer.style.display = 'none';
+                button.textContent = 'Show Answer';
+            }
+        }
+
+        function toggleSolution(button) {
+            const solution = button.nextElementSibling;
+            if (solution.style.display === 'none' || solution.style.display === '') {
+                solution.style.display = 'block';
+                button.textContent = 'Hide Solution';
+            } else {
+                solution.style.display = 'none';
+                button.textContent = 'Show Solution';
+            }
+        }
+
+        function submitQuiz() {
+            let score = 0;
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            if (q1 && q1.value === 'Sodium') score++;
+            if (q2 && q2.value === 'Sharing') score++;
+            const result = document.getElementById('quiz-result');
+            result.style.display = 'block';
+            result.innerHTML = `You scored ${score} out of 2!`;
+        }
+    </script>
+</body>
+</html>

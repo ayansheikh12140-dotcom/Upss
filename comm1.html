@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Fundamental of Computer - Class 9 Sindh Textbook Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body { background-color: #f8f9fa; }
+        .navbar { background-color: #2E8B57 !important; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .section { margin-bottom: 40px; }
+        .mcq { background-color: #e9f7ef; padding: 15px; margin: 10px 0; border-left: 5px solid #2E8B57; border-radius: 5px; }
+        .question { font-weight: bold; }
+        .answer { margin-left: 20px; color: #555; display: none; }
+        .important { background-color: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; border-radius: 5px; }
+        .btn-toggle { margin-top: 10px; }
+        .quiz-section { background-color: #f0f8ff; padding: 20px; border-radius: 8px; }
+        .quiz-question { margin-bottom: 15px; }
+        .quiz-result { margin-top: 20px; display: none; }
+        footer { background-color: #343a40; color: white; padding: 20px; text-align: center; }
+        .numerical { background-color: #f8f9fa; padding: 15px; margin: 10px 0; border: 1px solid #dee2e6; border-radius: 5px; }
+        .numerical .solution { display: none; margin-top: 10px; }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Computer Science Class 9 - Sindh Board</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#notes">Notes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mcqs">MCQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#short-questions">Short Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#long-questions">Long Qs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#numericals">Numericals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#important">Important</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container my-4">
+
+        <header class="text-center mb-4">
+            <h1 class="text-success">Chapter 1: Introduction to Computers</h1>
+            <p class="lead">Comprehensive Notes, Questions, and Practice for Sindh Textbook Board</p>
+        </header>
+
+
+        <!-- NOTES -->
+        <section id="notes" class="section">
+            <h3 class="text-success">Chapter Notes</h3>
+            <p>This chapter introduces the basics of computers, their history, components, and applications.</p>
+
+            <h4>What is a Computer?</h4>
+            <p>A computer is an electronic device that processes data according to a set of instructions (program) to produce information.</p>
+
+            <h4>History of Computers</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Abacus:</strong> Ancient calculating tool.</li>
+                <li class="list-group-item"><strong>Pascaline:</strong> Mechanical calculator by Blaise Pascal.</li>
+                <li class="list-group-item"><strong>ENIAC:</strong> First electronic computer (1945).</li>
+                <li class="list-group-item"><strong>Modern Computers:</strong> PCs, laptops, smartphones.</li>
+            </ul>
+
+            <h4>Components of a Computer</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Hardware:</strong> Physical parts (CPU, monitor, keyboard).</li>
+                <li class="list-group-item"><strong>Software:</strong> Programs and data (OS, applications).</li>
+                <li class="list-group-item"><strong>Data:</strong> Raw facts; Information: Processed data.</li>
+            </ul>
+
+            <h4>Types of Computers</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Analog:</strong> Measures continuous data (e.g., thermometer).</li>
+                <li class="list-group-item"><strong>Digital:</strong> Processes discrete data (e.g., PCs).</li>
+                <li class="list-group-item"><strong>Hybrid:</strong> Combination of both.</li>
+            </ul>
+
+            <h4>Generations of Computers</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>1st Generation:</strong> Vacuum tubes (1940s).</li>
+                <li class="list-group-item"><strong>2nd Generation:</strong> Transistors (1950s).</li>
+                <li class="list-group-item"><strong>3rd Generation:</strong> Integrated circuits (1960s).</li>
+                <li class="list-group-item"><strong>4th Generation:</strong> Microprocessors (1970s).</li>
+                <li class="list-group-item"><strong>5th Generation:</strong> AI and parallel processing (1980s onwards).</li>
+            </ul>
+
+            <h4>Applications</h4>
+            <p>Education, business, entertainment, communication, etc.</p>
+        </section>
+
+
+        <!-- MCQS -->
+        <section id="mcqs" class="section">
+            <h3 class="text-success">MCQs</h3>
+
+            <div class="mcq">
+                <p class="question">1. What does CPU stand for?</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">a) Central Processing Unit</p>
+            </div>
+
+            <div class="mcq">
+                <p class="question">2. Which is the first electronic computer?</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">c) ENIAC</p>
+            </div>
+
+            <div class="mcq">
+                <p class="question">3. Computers process data into:</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">a) Information</p>
+            </div>
+
+            <div class="mcq">
+                <p class="question">4. Which generation used transistors?</p>
+                <button class="btn btn-sm btn-success btn-toggle" onclick="toggleAnswer(this)">Show Answer</button>
+                <p class="answer">b) 2nd Generation</p>
+            </div>
+        </section>
+
+
+        <!-- SHORT QUESTIONS -->
+        <section id="short-questions" class="section">
+            <h3 class="text-success">Short Questions</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Define a computer.</strong><br>An electronic machine that processes data.</li>
+                <li class="list-group-item"><strong>What is hardware?</strong><br>Physical parts of a computer.</li>
+                <li class="list-group-item"><strong>What is software?</strong><br>Programs used by a computer.</li>
+                <li class="list-group-item"><strong>What is data?</strong><br>Raw facts.</li>
+                <li class="list-group-item"><strong>What is information?</strong><br>Processed data.</li>
+            </ol>
+        </section>
+
+
+        <!-- LONG QUESTIONS -->
+        <section id="long-questions" class="section">
+            <h3 class="text-success">Long Questions</h3>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item"><strong>Explain the history of computers.</strong><br>From Abacus → Pascaline → ENIAC → Modern computers.</li>
+                <li class="list-group-item"><strong>Explain generations of computers.</strong><br>1st: Vacuum tubes … 5th: AI.</li>
+            </ol>
+        </section>
+
+
+        <!-- NUMERICALS -->
+        <section id="numericals" class="section">
+            <h3 class="text-success">Numericals</h3>
+
+            <div class="numerical">
+                <p><strong>1. Convert 5 to binary.</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">101</div>
+            </div>
+
+            <div class="numerical">
+                <p><strong>2. Convert 10 to binary.</strong></p>
+                <button class="btn btn-sm btn-primary" onclick="toggleSolution(this)">Show Solution</button>
+                <div class="solution">1010</div>
+            </div>
+        </section>
+
+
+        <!-- QUIZ -->
+        <section id="quiz" class="section quiz-section">
+            <h3 class="text-success">Quiz</h3>
+
+            <div class="quiz-question">
+                <p>1. What is the brain of the computer?</p>
+                <input type="radio" name="q1" value="CPU"> CPU<br>
+                <input type="radio" name="q1" value="Monitor"> Monitor<br>
+            </div>
+
+            <div class="quiz-question">
+                <p>2. Which computer processes continuous data?</p>
+                <input type="radio" name="q2" value="Analog"> Analog<br>
+                <input type="radio" name="q2" value="Digital"> Digital<br>
+            </div>
+
+            <button class="btn btn-primary" onclick="submitQuiz()">Submit</button>
+
+            <div id="quiz-result" class="quiz-result alert alert-info"></div>
+        </section>
+
+
+        <!-- IMPORTANT POINTS -->
+        <section id="important" class="section">
+            <h3 class="text-success">Important Points</h3>
+            <div class="important">
+                <ul>
+                    <li>Know history and generations.</li>
+                    <li>Differentiate hardware/software.</li>
+                    <li>Practice binary conversions.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Study Notes | Class 9 Computer Science</p>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script>
+        function toggleAnswer(btn) {
+            const x = btn.nextElementSibling;
+            x.style.display = x.style.display === "block" ? "none" : "block";
+            btn.textContent = x.style.display === "block" ? "Hide Answer" : "Show Answer";
+        }
+
+        function toggleSolution(btn) {
+            const x = btn.nextElementSibling;
+            x.style.display = x.style.display === "block" ? "none" : "block";
+            btn.textContent = x.style.display === "block" ? "Hide Solution" : "Show Solution";
+        }
+
+        function submitQuiz() {
+            let score = 0;
+
+            if (document.querySelector('input[name="q1"]:checked')?.value === "CPU") score++;
+            if (document.querySelector('input[name="q2"]:checked')?.value === "Analog") score++;
+
+            const result = document.getElementById("quiz-result");
+            result.style.display = "block";
+            result.textContent = "Your Score: " + score + "/2";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
